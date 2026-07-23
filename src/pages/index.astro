@@ -1,0 +1,156 @@
+---
+export const prerender = true;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sydenham After School Club | Coming Soon</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #333;
+    }
+
+    .container {
+      max-width: 600px;
+      background: white;
+      padding: 60px 40px;
+      border-radius: 12px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #1e3c72;
+    }
+
+    .subtitle {
+      font-size: 1.1em;
+      color: #666;
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+
+    .info-box {
+      background: #f8f9fa;
+      padding: 30px;
+      border-radius: 8px;
+      margin: 30px 0;
+      border-left: 4px solid #2a5298;
+    }
+
+    .info-box h2 {
+      font-size: 1.3em;
+      color: #1e3c72;
+      margin-bottom: 15px;
+    }
+
+    .contact-section {
+      margin: 25px 0;
+    }
+
+    .contact-item {
+      margin: 12px 0;
+      font-size: 1.1em;
+    }
+
+    .contact-item a {
+      color: #2a5298;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .contact-item a:hover {
+      text-decoration: underline;
+    }
+
+    .phone {
+      font-size: 1.8em;
+      font-weight: 700;
+      color: #1e3c72;
+      margin: 15px 0;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background: #2a5298;
+      color: white;
+      padding: 15px 40px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      margin-top: 20px;
+      transition: background 0.3s ease;
+      font-size: 1.1em;
+    }
+
+    .cta-button:hover {
+      background: #1e3c72;
+    }
+
+    .footer-note {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #eee;
+      font-size: 0.9em;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🎓 Sydenham After School Club</h1>
+
+    <p class="subtitle">
+      We're refreshing our website with new features to make booking easier for parents.
+      <strong>We'll be back online very soon!</strong>
+    </p>
+
+    <div class="info-box">
+      <h2>We're Still Open</h2>
+      <p style="margin-bottom: 20px;">Our clubs and tuition sessions are running as normal. Get in touch with any questions.</p>
+
+      <div class="contact-section">
+        <div class="contact-item phone">
+          <a href="tel:07943118873">07943 118 873</a>
+        </div>
+        <div class="contact-item">
+          <a href="mailto:info@sydenhamasc.co.uk">info@sydenhamasc.co.uk</a>
+        </div>
+        <div class="contact-item">
+          📍 105 Sydenham Road, London SE26 5UA
+        </div>
+      </div>
+
+      <h2 style="margin-top: 25px;">Hours</h2>
+      <div style="text-align: left; display: inline-block;">
+        <p><strong>After School Club:</strong> 3pm – 8pm</p>
+        <p><strong>Tuition (Mon–Fri):</strong> 4:30pm – 5:50pm, 6pm – 7:20pm</p>
+        <p><strong>Tuition (Saturday):</strong> 10am – 12:50pm</p>
+      </div>
+    </div>
+
+    <a href="https://wa.me/447943118873" class="cta-button">Message on WhatsApp</a>
+
+    <div class="footer-note">
+      <p>New website launching soon with online booking.</p>
+    </div>
+  </div>
+</body>
+</html>

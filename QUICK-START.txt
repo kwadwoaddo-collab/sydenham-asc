@@ -1,0 +1,48 @@
+SYDENHAM ASC — HOLDING PAGE READY TO DEPLOY
+============================================
+
+Your holding page is built and ready to go live in 30 minutes.
+
+FILES LOCATION:
+  /outputs/sydenham-asc/
+
+  Contains:
+  - package.json (dependencies)
+  - astro.config.mjs (Astro config)
+  - src/pages/index.astro (holding page)
+  - .gitignore
+  - README.md
+
+NEXT STEPS (in order):
+
+1. PUSH TO GITHUB
+   Open Terminal, cd to ~/Downloads/sydenham-asc/
+
+   Follow Step 1 in DEPLOYMENT-GUIDE.md
+   (Create GitHub repo → push your code)
+
+2. DEPLOY TO VERCEL
+   Go to vercel.com → import your GitHub repo
+   Follow Step 2 in DEPLOYMENT-GUIDE.md
+   (Deploy takes 2-3 minutes)
+
+3. POINT DNS TO VERCEL
+   Log into Hostinger → DNS settings
+   Follow Step 3 in DEPLOYMENT-GUIDE.md
+   (Add 2 DNS records, wait 15-30 mins for propagation)
+
+4. VERIFY LIVE
+   Visit https://sydenhamasc.co.uk
+   You should see the holding page
+
+FULL GUIDE:
+  See DEPLOYMENT-GUIDE.md (step-by-step with screenshots/links)
+
+QUESTIONS?
+  The deployment guide covers troubleshooting.
+  Message me if anything doesn't work.
+
+NEXT BUILD:
+  Once holding page is live, we build the full site
+  (Home, Services, Pricing, Contact, etc.)
+  and deploy updates without downtime.

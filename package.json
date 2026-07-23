@@ -1,0 +1,15 @@
+{
+  "name": "sydenham-asc",
+  "version": "1.0.0",
+  "description": "Sydenham After School Club website",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^5.0.0"
+  }
+}
