@@ -25,7 +25,20 @@ import Icon from "../components/Icon.astro";
 
       <div class="hero-visual">
         <div class="hero-photo">
-          <img src="/photos/shopfront-crop.jpg" alt="Sydenham After School Club premises on Sydenham Road" />
+          <div class="hero-slideshow" id="heroSlides">
+            <div class="slide active"><img src="/photos/shopfront-crop.jpg" alt="Sydenham After School Club premises on Sydenham Road" /></div>
+            <div class="slide"><img src="/photos/slideshow/slide-tutor-child.jpg" alt="Tutor helping a child with their work" /></div>
+            <div class="slide"><img src="/photos/slideshow/slide-classroom-writing.jpg" alt="Child writing during a tuition session" /></div>
+            <div class="slide"><img src="/photos/slideshow/slide-homework-laptop.jpg" alt="Child completing homework" /></div>
+            <div class="slide"><img src="/photos/slideshow/slide-group-study.jpg" alt="Students studying together" /></div>
+            <div class="slide-dots" role="tablist" aria-label="Photo slideshow">
+              <button class="active" aria-label="Slide 1"></button>
+              <button aria-label="Slide 2"></button>
+              <button aria-label="Slide 3"></button>
+              <button aria-label="Slide 4"></button>
+              <button aria-label="Slide 5"></button>
+            </div>
+          </div>
         </div>
         <div class="hero-proof">
           <span class="proof-chip"><span class="pc-ic pc-y"><Icon name="star" size={18} /></span> <b>10+ years</b>&nbsp;serving Sydenham</span>
@@ -78,8 +91,8 @@ import Icon from "../components/Icon.astro";
       </div>
       <div class="grid grid-3">
         <div class="card"><div class="ico"><Icon name="bus" size={28} /></div><h3>Morning &amp; afternoon school runs</h3><p>From 7am we care for your child and drop them at school — then collect them again after — no juggling.</p></div>
-        <div class="card"><div class="ico green"><Icon name="book" size={28} /></div><h3>Homework &amp; tuition</h3><p>A quiet space and expert help, including Maths &amp; English programmes by GCSE and SATs examiners.</p></div>
-        <div class="card"><div class="ico"><Icon name="smile" size={28} /></div><h3>Play &amp; friendships</h3><p>Games, activities and friends from schools across Sydenham — social skills that last for life.</p></div>
+        <div class="card"><div class="ico green"><Icon name="book" size={28} /></div><h3>Supervised homework time</h3><p>A quiet space and a helping hand to get schoolwork done before you're home.</p></div>
+        <div class="card"><div class="ico"><Icon name="smile" size={28} /></div><h3>Play, STEM &amp; friendships</h3><p>Robotics, coding kits, board games and movie days with friends from schools across Sydenham.</p></div>
         <div class="card"><div class="ico green"><Icon name="shield" size={28} /></div><h3>Ofsted registered &amp; safe</h3><p>An Ofsted-registered provider. All staff DBS checked and safeguarding trained, with small ratios and close supervision.</p></div>
         <div class="card"><div class="ico"><Icon name="clock" size={28} /></div><h3>Wraparound care, 7am–9pm</h3><p>Early starts and late finishes covered, plus Saturday sessions and holiday club.</p></div>
         <div class="card"><div class="ico green"><Icon name="pound" size={28} /></div><h3>Tax-Free Childcare</h3><p>Save up to 20% — for every £8 you pay, the government adds £2. We'll help you set it up.</p></div>
@@ -93,21 +106,17 @@ import Icon from "../components/Icon.astro";
       <div class="split">
         <div class="split-media"><img src="/photos/stem-collection.jpg" alt="Robotics, coding and STEM kits used at Sydenham After School Club" /></div>
         <div>
-          <span class="eyebrow">Part of every club session</span>
+          <span class="eyebrow">Inside the after school club</span>
           <h2>Childcare that sparks a love of STEM</h2>
-          <p class="lead" style="max-width:none;">While your child is with us after school, they're not just waiting to be collected — they're building robots, coding, and exploring the subjects that shape their future. Hands-on learning that feels like play.</p>
+          <p class="lead" style="max-width:none;">While your child is with us after school, they're not just waiting to be collected — they're building robots, coding, and playing hands-on with real STEM kits. It's a club activity, not a lesson, so it feels like play.</p>
           <div class="pill-row">
-            <span class="pill"><Icon name="puzzle" size={16} /> Maths</span>
-            <span class="pill"><Icon name="sparkle" size={16} /> Science</span>
-            <span class="pill"><Icon name="book" size={16} /> English</span>
-            <span class="pill yellow"><Icon name="star" size={16} /> Coding &amp; Robotics</span>
-          </div>
-          <div class="prep-row">
-            <span class="prep">SATs Prep</span>
-            <span class="prep">GCSEs Prep</span>
-            <span class="prep">11+ Prep</span>
+            <span class="pill yellow"><Icon name="star" size={16} /> Coding &amp; Robotics Kits</span>
+            <span class="pill"><Icon name="puzzle" size={16} /> Board Games</span>
+            <span class="pill"><Icon name="smile" size={16} /> Movie Days</span>
+            <span class="pill"><Icon name="sparkle" size={16} /> Hands-on STEM Play</span>
           </div>
           <p style="margin-top:22px;"><a href="/after-school-club" class="btn btn-outline" style="padding:10px 22px;">See what a session looks like →</a></p>
+          <p class="form-note" style="margin-top:14px;">Looking for exam-focused tuition instead? See our <a href="/tuition">Maths, English &amp; Science tuition →</a></p>
         </div>
       </div>
     </div>
@@ -214,11 +223,11 @@ import Icon from "../components/Icon.astro";
         <div class="tier">
           <h3>Tuition</h3>
           <div class="price">£20<small> / hour</small></div>
-          <span style="color:var(--ink-soft);font-size:.92rem;">Maths &amp; English · 1hr 20min</span>
+          <span style="color:var(--ink-soft);font-size:.92rem;">Maths, English &amp; Science · 1hr 20min</span>
           <ul>
-            <li>Examiner-designed programmes</li>
+            <li>Primary to A-Level</li>
             <li>Small groups (max 1:6)</li>
-            <li>SATs &amp; GCSE preparation</li>
+            <li>11+, SATs, GCSE &amp; A-Level prep</li>
           </ul>
           <a href="/tuition" class="btn btn-outline">Learn More</a>
         </div>
@@ -240,5 +249,25 @@ import Icon from "../components/Icon.astro";
       </div>
     </div>
   </section>
+
+  <script is:inline>
+    (function () {
+      const root = document.getElementById('heroSlides');
+      if (!root) return;
+      const slides = root.querySelectorAll('.slide');
+      const dots = root.querySelectorAll('.slide-dots button');
+      let i = 0;
+      const go = (n) => {
+        slides[i].classList.remove('active');
+        dots[i].classList.remove('active');
+        i = (n + slides.length) % slides.length;
+        slides[i].classList.add('active');
+        dots[i].classList.add('active');
+      };
+      dots.forEach((d, idx) => d.addEventListener('click', () => go(idx)));
+      const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (!prefersReduced) setInterval(() => go(i + 1), 4500);
+    })();
+  </script>
 
 </Layout>
