@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 500" role="img" aria-label="Ofsted Registered">
+  <rect width="620" height="500" fill="#ffffff"/>
+  <g stroke="#4C9BC8" stroke-width="12" stroke-linecap="round">
+    <g transform="translate(345,185) scale(0.82)">
+      <circle cx="0" cy="-40" r="14" fill="#4C9BC8" stroke="none"/>
+      <line x1="-24" y1="-18" x2="24" y2="22"/>
+      <line x1="24" y1="-18" x2="-24" y2="22"/>
+    </g>
+    <g transform="translate(405,158) scale(0.97)">
+      <circle cx="0" cy="-40" r="14" fill="#4C9BC8" stroke="none"/>
+      <line x1="-24" y1="-18" x2="24" y2="22"/>
+      <line x1="24" y1="-18" x2="-24" y2="22"/>
+    </g>
+    <g transform="translate(470,128) scale(1.15)">
+      <circle cx="0" cy="-40" r="14" fill="#4C9BC8" stroke="none"/>
+      <line x1="-24" y1="-18" x2="24" y2="22"/>
+      <line x1="24" y1="-18" x2="-24" y2="22"/>
+    </g>
+  </g>
+  <text x="310" y="360" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="150" fill="#16284B">Ofsted</text>
+  <text x="310" y="452" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="400" font-size="70" fill="#1a1a1a">Registered</text>
+</svg>

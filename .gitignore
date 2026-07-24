@@ -5,3 +5,4 @@ dist/
 .env.local
 *.log
 preview.html
+public/photos/ofsted-check.png
