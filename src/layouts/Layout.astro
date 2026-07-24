@@ -1,0 +1,135 @@
+---
+const {
+  title = "Sydenham After School Club",
+  description = "Award-caring after school club and expert tuition in Sydenham SE26. Safe childcare 3–8pm, school pick-ups, and GCSE & SATs tuition. Book your child's place today.",
+  active = "",
+} = Astro.props;
+
+const nav = [
+  { href: "/after-school-club", label: "After School Club", key: "club" },
+  { href: "/tuition", label: "Tuition & GCSE", key: "tuition" },
+  { href: "/fees", label: "Fees", key: "fees" },
+  { href: "/join-us", label: "Join the Team", key: "join" },
+  { href: "/about", label: "About", key: "about" },
+  { href: "/contact", label: "Contact", key: "contact" },
+];
+---
+
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="theme-color" content="#2c2a26" />
+  <link rel="canonical" href={`https://sydenhamasc.co.uk${Astro.url.pathname}`} />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content={`https://sydenhamasc.co.uk${Astro.url.pathname}`} />
+
+  <!-- LocalBusiness structured data -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "ChildCare",
+    "name": "Sydenham After School Club",
+    "image": "https://sydenhamasc.co.uk/og-image.jpg",
+    "@id": "https://sydenhamasc.co.uk",
+    "url": "https://sydenhamasc.co.uk",
+    "telephone": "+447943118873",
+    "email": "info@sydenhamasc.co.uk",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "105 Sydenham Road",
+      "addressLocality": "London",
+      "postalCode": "SE26 5UA",
+      "addressCountry": "GB"
+    },
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "15:00", "closes": "20:00"
+    }],
+    "areaServed": "Sydenham, Forest Hill, Penge, Catford SE26"
+  })} />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="/">
+        <span class="logo-mark">S</span>
+        <span>Sydenham ASC</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        {nav.map((item) => (
+          <li><a href={item.href} class={active === item.key ? "active" : ""}>{item.label}</a></li>
+        ))}
+      </ul>
+      <div class="nav-cta">
+        <a href="/join-us" class="btn btn-outline">We're Hiring</a>
+        <a href="/contact" class="btn btn-primary">Book a Place</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <slot />
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="/" style="color:#fff;">
+            <span class="logo-mark">S</span>
+            <span style="color:#fff;">Sydenham ASC</span>
+          </a>
+          <p style="margin-top:14px; max-width: 320px;">
+            A safe, friendly after school club and tuition centre in the heart of Sydenham —
+            trusted by local families for over eight years.
+          </p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="/after-school-club">After School Club</a></li>
+            <li><a href="/tuition">Tuition &amp; GCSE</a></li>
+            <li><a href="/fees">Fees</a></li>
+            <li><a href="/join-us">Join the Team</a></li>
+            <li><a href="/about">About Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Get in Touch</h4>
+          <ul class="footer-links">
+            <li><a href="tel:07943118873">📞 07943 118 873</a></li>
+            <li><a href="mailto:info@sydenhamasc.co.uk">✉️ info@sydenhamasc.co.uk</a></li>
+            <li>📍 105 Sydenham Road,<br />London SE26 5UA</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Sydenham After School Club. All rights reserved.</span>
+        <span>All staff DBS checked &amp; safeguarding trained.</span>
+      </div>
+    </div>
+  </footer>
+
+  <a class="wa-float" href="https://wa.me/447943118873" aria-label="WhatsApp us" target="_blank" rel="noopener">💬</a>
+
+  <script is:inline>
+    const t = document.getElementById('navToggle');
+    const l = document.getElementById('navLinks');
+    if (t && l) t.addEventListener('click', () => l.classList.toggle('open'));
+  </script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "redirects": [
+    { "source": "/contact-us", "destination": "/contact", "permanent": true },
+    { "source": "/childcare", "destination": "/after-school-club", "permanent": true },
+    { "source": "/gcse", "destination": "/tuition", "permanent": true },
+    { "source": "/gcse-guide", "destination": "/tuition", "permanent": true },
+    { "source": "/sats", "destination": "/tuition", "permanent": true },
+    { "source": "/sats-guide", "destination": "/tuition", "permanent": true }
+  ]
+}

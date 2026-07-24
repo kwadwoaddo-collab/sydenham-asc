@@ -1,0 +1,95 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+<Layout title="Contact & Book a Place | Sydenham After School Club" active="contact"
+  description="Contact Sydenham After School Club in SE26. Call 07943 118 873, email info@sydenhamasc.co.uk, or send an enquiry to book your child's place.">
+
+  <section class="hero">
+    <div class="container">
+      <span class="eyebrow" style="color:#ffd9a0;">Contact &amp; Book</span>
+      <h1>Book a place or ask us anything</h1>
+      <p>Tell us a little about your child and what you need. We'll get back to you quickly with availability and next steps.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="split">
+        <div>
+          <span class="eyebrow">Get in touch</span>
+          <h2>We're here to help</h2>
+          <p class="lead" style="max-width:none;">Call, WhatsApp, email or use the form — whatever's easiest. We're open every day and always happy to talk through options.</p>
+          <ul class="info-list mt-2">
+            <li><span class="ic">📞</span><div><b>Phone</b><a href="tel:07943118873">07943 118 873</a></div></li>
+            <li><span class="ic">💬</span><div><b>WhatsApp</b><a href="https://wa.me/447943118873" target="_blank" rel="noopener">Message us instantly</a></div></li>
+            <li><span class="ic">✉️</span><div><b>Email</b><a href="mailto:info@sydenhamasc.co.uk">info@sydenhamasc.co.uk</a></div></li>
+            <li><span class="ic">📍</span><div><b>Visit</b>105 Sydenham Road, London SE26 5UA</div></li>
+          </ul>
+        </div>
+
+        <div class="form-card">
+          <!-- Web3Forms: replace access_key with your own free key from web3forms.com -->
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="89407cdb-6d4a-4655-b6cf-b4d22050eff2" />
+            <input type="hidden" name="subject" value="New enquiry — Sydenham ASC website" />
+            <input type="hidden" name="from_name" value="Sydenham ASC Website" />
+            <input type="checkbox" name="botcheck" style="display:none;" />
+
+            <div class="field">
+              <label for="pname">Your name *</label>
+              <input id="pname" type="text" name="name" required />
+            </div>
+            <div class="form-row">
+              <div class="field">
+                <label for="pemail">Email *</label>
+                <input id="pemail" type="email" name="email" required />
+              </div>
+              <div class="field">
+                <label for="pphone">Phone</label>
+                <input id="pphone" type="tel" name="phone" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="field">
+                <label for="interest">I'm interested in *</label>
+                <select id="interest" name="interest" required>
+                  <option value="">Select…</option>
+                  <option>After School Club</option>
+                  <option>Holiday Club</option>
+                  <option>Tuition (Maths / English)</option>
+                  <option>GCSE / SATs prep</option>
+                  <option>School pick-up service</option>
+                  <option>Something else</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="childyear">Child's year group</label>
+                <input id="childyear" type="text" name="child_year" placeholder="e.g. Year 4" />
+              </div>
+            </div>
+            <div class="field">
+              <label for="pmessage">Message</label>
+              <textarea id="pmessage" name="message" placeholder="Which school does your child attend? What days do you need?"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;">Send Enquiry</button>
+            <p class="form-note">We'll only use your details to respond to your enquiry.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-soft">
+    <div class="container">
+      <div class="center mb-3"><span class="eyebrow">Find us</span><h2>105 Sydenham Road, SE26 5UA</h2></div>
+      <div style="border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow);">
+        <iframe
+          title="Map to Sydenham After School Club"
+          src="https://www.google.com/maps?q=105+Sydenham+Road,+London+SE26+5UA&output=embed"
+          width="100%" height="420" style="border:0;display:block;" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+</Layout>
