@@ -9,5 +9,5 @@ public/photos/ofsted-check.png
 public/photos/_hero_small.jpg
 public/photos/_hero_b64.txt
 .DS_Store
-Photos/
-photos/
+/Photos/
+/photos/

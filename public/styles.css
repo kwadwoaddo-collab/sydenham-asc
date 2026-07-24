@@ -108,14 +108,10 @@ h3 { font-size: 1.3rem; font-weight: 600; letter-spacing: -0.01em; }
   display: flex; align-items: center; justify-content: space-between;
   height: 72px;
 }
-.brand { display: flex; align-items: center; gap: 11px; font-family: var(--serif); font-weight: 600; color: var(--navy); font-size: 1.2rem; letter-spacing: -0.01em; }
+.brand { display: flex; align-items: center; gap: 11px; }
 .brand:hover { text-decoration: none; }
-.brand .logo-mark {
-  width: 40px; height: 40px; border-radius: 50%;
-  background: var(--accent);
-  color: var(--navy); display:grid; place-items:center; font-size: 1.4rem; font-weight: 900;
-  font-family: Georgia, "Times New Roman", serif;
-}
+.brand-logo { height: 48px; width: auto; display: block; }
+@media (max-width: 600px) { .brand-logo { height: 40px; } }
 .nav-links { display: flex; align-items: center; gap: 22px; list-style: none; }
 .nav-links a { color: var(--ink); font-weight: 600; font-size: .98rem; }
 .nav-links a:hover { color: var(--navy-2); text-decoration: none; }
@@ -291,6 +287,27 @@ h3 { font-size: 1.3rem; font-weight: 600; letter-spacing: -0.01em; }
 .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
 @media (max-width: 620px){ .form-row { grid-template-columns: 1fr; } }
 .form-note { font-size: .85rem; color: var(--ink-soft); margin-top: 10px; }
+
+.tuition-callout {
+  display: flex; align-items: center; gap: 14px;
+  margin-top: 22px; padding: 14px 18px;
+  background: linear-gradient(135deg, #fff6d6, #ffe693);
+  border: 1.5px solid var(--accent-dark);
+  border-radius: 14px;
+  text-decoration: none;
+  box-shadow: var(--shadow);
+  max-width: 480px;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.tuition-callout:hover { transform: translateY(-2px); box-shadow: var(--shadow-lg); }
+.tuition-callout-ico {
+  flex-shrink: 0; width: 40px; height: 40px; border-radius: 50%;
+  background: var(--navy); color: #fff; display: grid; place-items: center;
+}
+.tuition-callout-text { display: flex; flex-direction: column; gap: 2px; }
+.tuition-callout-text strong { color: var(--navy); font-size: .96rem; }
+.tuition-callout-text span:last-child { color: var(--navy-2); font-weight: 700; font-size: .9rem; }
+@media (max-width: 480px) { .tuition-callout { max-width: 100%; } }
 
 /* ---------- Contact info ---------- */
 .info-list { list-style:none; }
