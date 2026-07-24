@@ -4,37 +4,31 @@ import Icon from "../components/Icon.astro";
 ---
 <Layout title="Sydenham After School Club | Childcare & Tuition in SE26" active="home">
 
-  <!-- HERO -->
+  <!-- 1. HERO -->
   <section class="hero">
     <div class="container hero-grid">
       <div class="hero-copy">
         <span class="eyebrow">Aspire · Achieve · Excel</span>
         <h1>A warm, happy place for your child after school</h1>
-        <p>Trusted childcare and expert tuition in the heart of Sydenham. We collect from local schools, keep your child happy until 8pm, and help them shine in Maths, English and beyond.</p>
+        <p>Trusted childcare and expert tuition in the heart of Sydenham. We drop off and collect from local schools, care for your child from 7am to 9pm, and help them shine in Maths, English and beyond.</p>
         <div class="hero-actions">
           <a href="/contact" class="btn btn-primary">Book a Place</a>
-          <a href="/after-school-club" class="btn btn-outline">See How It Works</a>
+          <a href="#how" class="btn btn-outline">How It Works</a>
         </div>
         <div class="hero-badges">
           <span class="hero-badge"><span class="dot"><Icon name="shield" size={17} /></span> DBS-checked staff</span>
-          <span class="hero-badge"><span class="dot"><Icon name="clock" size={17} /></span> Open until 8pm</span>
-          <span class="hero-badge"><span class="dot"><Icon name="bus" size={17} /></span> School pick-ups</span>
+          <span class="hero-badge"><span class="dot"><Icon name="clock" size={17} /></span> Open 7am–9pm</span>
+          <span class="hero-badge"><span class="dot"><Icon name="bus" size={17} /></span> School drop-offs &amp; pick-ups</span>
         </div>
       </div>
 
       <div class="hero-visual">
         <div class="hero-photo">
-          <div class="hero-medallion">
-            <span class="m-s">S</span>
-            <span class="m-t">Aspire · Achieve · Excel</span>
-          </div>
+          <img src="/photos/shopfront.jpg" alt="Sydenham After School Club premises on Sydenham Road" />
         </div>
         <div class="float-card fc-rating">
           <div class="fc-ic" style="background:#fff3df;color:var(--accent-dark);"><Icon name="heart" size={20} /></div>
-          <div>
-            <div class="stars-row">★★★★★</div>
-            <span>Loved by local parents</span>
-          </div>
+          <div><div class="stars-row">★★★★★</div><span>Loved by local parents</span></div>
         </div>
         <div class="float-card fc-spaces">
           <div class="fc-ic" style="background:#e4f6ec;color:#1f8a4c;"><Icon name="check" size={20} /></div>
@@ -42,92 +36,213 @@ import Icon from "../components/Icon.astro";
         </div>
         <div class="float-card fc-years">
           <div class="fc-ic" style="background:#fff3df;color:var(--accent-dark);"><Icon name="star" size={20} /></div>
-          <div><b>8+ years</b><span>Serving Sydenham</span></div>
+          <div><b>10+ years</b><span>Serving Sydenham</span></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- TWO PILLARS -->
+  <!-- 2. PROBLEM & SOLUTION -->
   <section class="section">
     <div class="container">
       <div class="center mb-3">
-        <span class="eyebrow">What we offer</span>
-        <h2>Two ways we support your family</h2>
-        <p class="lead">Wraparound childcare after school, plus focused tuition that builds real confidence — under one roof.</p>
+        <span class="eyebrow">The 3pm problem</span>
+        <h2>The school day ends at 3. Your work day doesn't.</h2>
+        <p class="lead">Every working parent knows the daily scramble. Here's what we take off your plate.</p>
       </div>
-      <div class="grid grid-2">
-        <div class="card">
-          <div class="ico"><Icon name="smile" size={28} /></div>
-          <h3>After School Club</h3>
-          <p>Quality childcare in a safe, stimulating environment from 3pm to 8pm. Your child relaxes, plays, makes friends from other schools, and gets help with homework — while you finish your day.</p>
-          <p class="mt-1"><a href="/after-school-club" class="btn btn-outline" style="padding:10px 22px;">Explore the Club →</a></p>
+      <div class="grid grid-3">
+        <div class="card pain">
+          <div class="ico"><Icon name="clock" size={28} /></div>
+          <h3>The 3pm dash</h3>
+          <p>Leaving work early or begging favours just to make the school pick-up — every single day.</p>
         </div>
-        <div class="card">
-          <div class="ico green"><Icon name="book" size={28} /></div>
-          <h3>Tuition &amp; GCSE</h3>
-          <p>Individualised Maths and English programmes designed by official GCSE and SATs examiners. Small groups of up to six, so every child gets the attention they need to thrive.</p>
-          <p class="mt-1"><a href="/tuition" class="btn btn-outline" style="padding:10px 22px;">Explore Tuition →</a></p>
+        <div class="card pain">
+          <div class="ico"><Icon name="book" size={28} /></div>
+          <h3>Homework battles</h3>
+          <p>Tired children, tired parents, and the same argument over spellings and sums every evening.</p>
         </div>
+        <div class="card pain">
+          <div class="ico"><Icon name="shield" size={28} /></div>
+          <h3>The worry</h3>
+          <p>Wondering whether your child is safe, settled and happy in the hours before you're home.</p>
+        </div>
+      </div>
+
+      <div class="solution-band">
+        <h3>That's exactly why Sydenham ASC exists.</h3>
+        <p>We collect your child from school, keep them safe and busy in a warm environment, help with homework and tuition, and hand you back a happy child at the end of your day — as late as 9pm.</p>
       </div>
     </div>
   </section>
 
-  <!-- WHY CHOOSE -->
+  <!-- 3. FEATURES & BENEFITS -->
   <section class="section section-soft">
+    <div class="container">
+      <div class="center mb-3">
+        <span class="eyebrow">What your child gets</span>
+        <h2>Everything they need under one roof</h2>
+        <p class="lead">More than childcare — a place to learn, play, and grow in confidence.</p>
+      </div>
+      <div class="grid grid-3">
+        <div class="card"><div class="ico"><Icon name="bus" size={28} /></div><h3>Morning &amp; afternoon school runs</h3><p>From 7am we care for your child and drop them at school — then collect them again after — no juggling.</p></div>
+        <div class="card"><div class="ico green"><Icon name="book" size={28} /></div><h3>Homework &amp; tuition</h3><p>A quiet space and expert help, including Maths &amp; English programmes by GCSE and SATs examiners.</p></div>
+        <div class="card"><div class="ico"><Icon name="smile" size={28} /></div><h3>Play &amp; friendships</h3><p>Games, activities and friends from schools across Sydenham — social skills that last for life.</p></div>
+        <div class="card"><div class="ico green"><Icon name="shield" size={28} /></div><h3>Safe &amp; secure</h3><p>All staff DBS checked and safeguarding trained, with small ratios and close supervision.</p></div>
+        <div class="card"><div class="ico"><Icon name="clock" size={28} /></div><h3>Wraparound care, 7am–9pm</h3><p>Early starts and late finishes covered, plus Saturday sessions and holiday club.</p></div>
+        <div class="card"><div class="ico green"><Icon name="pound" size={28} /></div><h3>Tax-Free Childcare</h3><p>Save up to 20% — for every £8 you pay, the government adds £2. We'll help you set it up.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3b. STEM (part of the club) -->
+  <section class="section" id="stem">
     <div class="container">
       <div class="split">
-        <div class="split-media"><Icon name="cap" size={92} /></div>
+        <div class="split-media"><img src="/photos/stem-collection.jpg" alt="Robotics, coding and STEM kits used at Sydenham After School Club" /></div>
         <div>
-          <span class="eyebrow">Why families choose us</span>
-          <h2>Eight years of helping Sydenham's children shine</h2>
-          <p class="lead" style="max-width:none;">Our seasoned tutors have taught the British system for decades. We're in a prime, easy-to-reach location and open every day of the week — always here when you need us.</p>
-          <ul>
-            <li>Every child gets an individual programme — because children in the same year learn differently</li>
-            <li>Small 1:6 tuition groups balance personal support with independent learning</li>
-            <li>A calm change of scene after school, so worries from the day are left behind</li>
-            <li>Friendships form across schools that would never happen otherwise</li>
-          </ul>
+          <span class="eyebrow">Part of every club session</span>
+          <h2>Childcare that sparks a love of STEM</h2>
+          <p class="lead" style="max-width:none;">While your child is with us after school, they're not just waiting to be collected — they're building robots, coding, and exploring the subjects that shape their future. Hands-on learning that feels like play.</p>
+          <div class="pill-row">
+            <span class="pill"><Icon name="puzzle" size={16} /> Maths</span>
+            <span class="pill"><Icon name="sparkle" size={16} /> Science</span>
+            <span class="pill"><Icon name="book" size={16} /> English</span>
+            <span class="pill yellow"><Icon name="star" size={16} /> Coding &amp; Robotics</span>
+          </div>
+          <div class="prep-row">
+            <span class="prep">SATs Prep</span>
+            <span class="prep">GCSEs Prep</span>
+            <span class="prep">11+ Prep</span>
+          </div>
+          <p style="margin-top:22px;"><a href="/after-school-club" class="btn btn-outline" style="padding:10px 22px;">See what a session looks like →</a></p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- STATS -->
-  <section class="section">
+  <!-- 4. HOW IT WORKS -->
+  <section class="section" id="how">
     <div class="container">
-      <div class="grid grid-4">
-        <div class="stat"><div class="num">8+</div><div class="lbl">Years in Sydenham</div></div>
+      <div class="center mb-3">
+        <span class="eyebrow">How it works</span>
+        <h2>Getting started is simple</h2>
+        <p class="lead">Three easy steps and your child's place is sorted.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="n">1</div>
+          <h3>Get in touch</h3>
+          <p>Tell us your child's school, year group and the days you need. Call, WhatsApp or send the form.</p>
+        </div>
+        <div class="step">
+          <div class="n">2</div>
+          <h3>Book their place</h3>
+          <p>We confirm availability, arrange pick-ups and sort payment — Tax-Free Childcare welcome.</p>
+        </div>
+        <div class="step">
+          <div class="n">3</div>
+          <h3>Relax</h3>
+          <p>Your child is collected, cared for and helped with homework while you finish your day.</p>
+        </div>
+      </div>
+      <div class="center" style="margin-top:40px;">
+        <a href="/contact" class="btn btn-primary">Book a Place</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. SOCIAL PROOF -->
+  <section class="section section-soft">
+    <div class="container">
+      <div class="center mb-3">
+        <span class="eyebrow">Loved by local families</span>
+        <h2>Parents trust us with what matters most</h2>
+      </div>
+      <div class="testi-grid">
+        <div class="testi">
+          <div class="stars">★★★★★</div>
+          <p>"If you want to see how the things you read in books really work in life, come to Sydenham. My child actually looks forward to going."</p>
+          <div class="who"><span class="av">A</span><div><b>A Sydenham parent</b><span>After School Club</span></div></div>
+        </div>
+        <div class="testi">
+          <div class="stars">★★★★★</div>
+          <p>"The pick-up service is a lifesaver, and the tutors genuinely care. My son's confidence in Maths has completely turned around."</p>
+          <div class="who"><span class="av">P</span><div><b>Parent of a Year 5</b><span>Tuition &amp; Club</span></div></div>
+        </div>
+        <div class="testi">
+          <div class="stars">★★★★★</div>
+          <p>"Warm, safe and reliable. I never worry when she's there — and she's made lovely friends from other schools."</p>
+          <div class="who"><span class="av">N</span><div><b>A local mum</b><span>After School Club</span></div></div>
+        </div>
+      </div>
+      <div class="grid grid-4" style="margin-top:44px;">
+        <div class="stat"><div class="num">10+</div><div class="lbl">Years in Sydenham</div></div>
         <div class="stat"><div class="num">1:6</div><div class="lbl">Max tuition ratio</div></div>
-        <div class="stat"><div class="num">3–8pm</div><div class="lbl">After school hours</div></div>
+        <div class="stat"><div class="num">3–9pm</div><div class="lbl">After school hours</div></div>
         <div class="stat"><div class="num">100%</div><div class="lbl">DBS-checked staff</div></div>
       </div>
+      <p class="form-note center" style="margin-top:16px;">We'll link our live Google reviews here soon.</p>
     </div>
   </section>
 
-  <!-- TESTIMONIAL -->
-  <section class="section section-soft">
-    <div class="container center">
-      <span class="eyebrow">From our families</span>
-      <h2>Loved by local parents</h2>
-      <div class="card" style="max-width:720px; margin:24px auto 0;">
-        <div style="color:var(--accent);letter-spacing:3px;font-size:1.2rem;margin-bottom:10px;">★★★★★</div>
-        <p style="font-size:1.2rem; color:var(--ink);">"If you want to see how the things you read in books really work in life, come to Sydenham. The tutors genuinely care and my child actually looks forward to going."</p>
-        <p class="mt-2" style="font-weight:800; color:var(--navy);">— A Sydenham parent</p>
-      </div>
-      <p class="form-note" style="margin-top:14px;">More reviews coming soon — we'll link our Google reviews here.</p>
-    </div>
-  </section>
-
-  <!-- CTA -->
+  <!-- 6. PRICING / PACKAGES -->
   <section class="section">
+    <div class="container">
+      <div class="center mb-3">
+        <span class="eyebrow">Simple pricing</span>
+        <h2>Choose what suits your family</h2>
+        <p class="lead">Flexible sessions with no hidden costs. Tax-Free Childcare and vouchers welcome.</p>
+      </div>
+      <div class="tiers">
+        <div class="tier">
+          <h3>After School</h3>
+          <div class="price">£37.50<small> / session</small></div>
+          <span style="color:var(--ink-soft);font-size:.92rem;">Mon–Fri, 3pm–6pm</span>
+          <ul>
+            <li>School pick-up included</li>
+            <li>Homework support</li>
+            <li>Games, activities &amp; snacks</li>
+          </ul>
+          <a href="/contact" class="btn btn-outline">Book a Place</a>
+        </div>
+        <div class="tier featured">
+          <span class="pop">Most popular</span>
+          <h3>Full Session</h3>
+          <div class="price">£45.00<small> / session</small></div>
+          <span style="color:var(--ink-soft);font-size:.92rem;">Mon–Fri, 3pm–9pm</span>
+          <ul>
+            <li>Everything in After School</li>
+            <li>Care right through to 9pm</li>
+            <li>Ideal for full working days</li>
+            <li>Priority on pick-up routes</li>
+          </ul>
+          <a href="/contact" class="btn btn-primary">Book a Place</a>
+        </div>
+        <div class="tier">
+          <h3>Tuition</h3>
+          <div class="price">£20<small> / hour</small></div>
+          <span style="color:var(--ink-soft);font-size:.92rem;">Maths &amp; English · 1hr 20min</span>
+          <ul>
+            <li>Examiner-designed programmes</li>
+            <li>Small groups (max 1:6)</li>
+            <li>SATs &amp; GCSE preparation</li>
+          </ul>
+          <a href="/tuition" class="btn btn-outline">Learn More</a>
+        </div>
+      </div>
+      <p class="form-note center" style="margin-top:18px;">Fees shown as a guide — please confirm current rates when you book. See the <a href="/fees">full fees page</a>.</p>
+    </div>
+  </section>
+
+  <!-- 7. FINAL CTA -->
+  <section class="section section-soft">
     <div class="container">
       <div class="cta-band">
         <h2>Ready to book your child's place?</h2>
         <p>Spaces fill up fast, especially for after school pick-ups. Get in touch today and we'll walk you through everything.</p>
         <div style="display:flex; gap:14px; justify-content:center; flex-wrap:wrap;">
           <a href="/contact" class="btn btn-navy">Book a Place</a>
-          <a href="https://wa.me/447943118873" class="btn btn-wa" target="_blank" rel="noopener">WhatsApp Us</a>
+          <a href="https://wa.me/447584874710" class="btn btn-wa" target="_blank" rel="noopener">WhatsApp Us</a>
         </div>
       </div>
     </div>
