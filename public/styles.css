@@ -136,26 +136,63 @@ h3 { font-size: 1.3rem; font-weight: 600; letter-spacing: -0.01em; }
   .nav-links.open a { padding: 10px 0; border-bottom: 1px solid var(--line); }
 }
 
-/* ---------- Hero ---------- */
+/* ---------- Hero (warm, welcoming, light) ---------- */
 .hero {
   background:
-    radial-gradient(1100px 500px at 78% -8%, rgba(245,166,35,.28), transparent 60%),
-    radial-gradient(800px 500px at 8% 110%, rgba(47,174,102,.22), transparent 55%),
-    linear-gradient(150deg, #2c2a26 0%, #383530 55%, #2f2c27 100%);
-  color: #fff; position: relative; overflow: hidden;
+    radial-gradient(900px 480px at 88% -5%, #ffe6bd, transparent 62%),
+    radial-gradient(760px 520px at -5% 108%, #d9f2e4, transparent 58%),
+    #fef9f0;
+  color: var(--ink); position: relative; overflow: hidden;
 }
-.hero::before {
-  content:""; position:absolute; inset:0;
-  background-image: radial-gradient(rgba(255,255,255,.06) 1px, transparent 1px);
-  background-size: 22px 22px; opacity: .5;
-}
-.hero .container { position: relative; z-index: 2; padding-top: 96px; padding-bottom: 96px; }
-.hero h1 { color: #fff; max-width: 780px; }
-.hero p { color: rgba(255,255,255,.82); font-size: 1.22rem; max-width: 580px; margin: 20px 0 32px; line-height: 1.7; }
+.hero .container { position: relative; z-index: 2; padding-top: 84px; padding-bottom: 84px; }
+.hero h1 { color: var(--navy); max-width: 720px; }
+.hero p { color: var(--ink-soft); font-size: 1.22rem; max-width: 560px; margin: 20px 0 32px; line-height: 1.7; }
 .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
-.hero-badges { display:flex; gap: 22px; flex-wrap: wrap; margin-top: 38px; }
-.hero-badge { display:flex; align-items:center; gap:8px; color:#fff; font-weight:600; font-size:.95rem; }
-.hero-badge .dot { width: 22px; height:22px; border-radius:50%; background: rgba(255,255,255,.18); display:grid; place-items:center; font-size:.8rem; }
+.hero-badges { display:flex; gap: 14px 26px; flex-wrap: wrap; margin-top: 38px; }
+.hero-badge { display:flex; align-items:center; gap:10px; color:var(--ink); font-weight:600; font-size:.95rem; }
+.hero-badge .dot { width: 30px; height:30px; border-radius:50%; background: #fff; color: var(--green); display:grid; place-items:center; box-shadow: var(--shadow); }
+
+/* Two-column homepage hero */
+.hero-grid { display: grid; grid-template-columns: 1.04fr .96fr; gap: 56px; align-items: center; }
+@media (max-width: 940px) { .hero-grid { grid-template-columns: 1fr; gap: 44px; } }
+
+.hero-visual { position: relative; min-height: 480px; }
+.hero-photo {
+  position: absolute; inset: 0; border-radius: 30px; overflow: hidden;
+  background:
+    radial-gradient(120% 90% at 20% 10%, #ffd487, transparent 55%),
+    linear-gradient(150deg, #f7a83d 0%, #ec8f1e 45%, #2fae66 130%);
+  box-shadow: 0 30px 70px rgba(224,137,10,.28);
+  display: grid; place-items: center;
+}
+.hero-photo::after {
+  content:""; position:absolute; inset:0;
+  background-image: radial-gradient(rgba(255,255,255,.16) 1.5px, transparent 1.5px);
+  background-size: 26px 26px;
+}
+.hero-medallion {
+  position: relative; z-index: 2; text-align: center; color: #fff;
+  width: 230px; height: 230px; border-radius: 50%;
+  background: rgba(255,255,255,.16); backdrop-filter: blur(2px);
+  border: 2px solid rgba(255,255,255,.5);
+  display: grid; place-content: center; gap: 6px;
+}
+.hero-medallion .m-s { font-family: var(--serif); font-size: 5rem; line-height: 1; font-weight: 700; }
+.hero-medallion .m-t { text-transform: uppercase; letter-spacing: .18em; font-size: .72rem; font-weight: 700; }
+
+.float-card {
+  position: absolute; background: #fff; border-radius: 16px;
+  box-shadow: var(--shadow-lg); padding: 13px 16px;
+  display: flex; align-items: center; gap: 11px; z-index: 3;
+}
+.float-card .fc-ic { width: 40px; height: 40px; border-radius: 11px; display: grid; place-items: center; flex-shrink: 0; }
+.float-card b { display: block; color: var(--navy); font-size: .95rem; line-height: 1.2; }
+.float-card span { color: var(--ink-soft); font-size: .82rem; }
+.fc-rating { top: 30px; left: -22px; }
+.fc-spaces { bottom: 40px; right: -18px; }
+.fc-years  { bottom: -18px; left: 26px; }
+.stars-row { color: var(--accent); letter-spacing: 2px; font-size: .9rem; }
+@media (max-width: 480px) { .fc-rating { left: 6px; } .fc-spaces { right: 6px; } }
 
 /* ---------- Cards / grids ---------- */
 .grid { display: grid; gap: 24px; }
@@ -181,9 +218,10 @@ h3 { font-size: 1.3rem; font-weight: 600; letter-spacing: -0.01em; }
 .card:hover::before { transform: scaleX(1); }
 .card .ico {
   width: 58px; height: 58px; border-radius: 16px; display: grid; place-items: center;
-  font-size: 1.6rem; margin-bottom: 18px;
+  margin-bottom: 18px; color: var(--accent-dark);
   background: linear-gradient(135deg, #fff3df, #ffe7c2);
 }
+.card .ico.green { color: #1f8a4c; background: linear-gradient(135deg, #e4f6ec, #c8efd8); }
 .card h3 { margin-bottom: 8px; }
 .card p { color: var(--ink-soft); }
 
@@ -192,11 +230,20 @@ h3 { font-size: 1.3rem; font-weight: 600; letter-spacing: -0.01em; }
 .split.reverse .split-media { order: 2; }
 @media (max-width: 860px) { .split { grid-template-columns: 1fr; gap: 28px; } .split.reverse .split-media { order: 0; } }
 .split-media {
-  border-radius: var(--radius-lg); overflow: hidden; min-height: 320px;
-  background: linear-gradient(135deg, #fff3df, #ffe4bd);
+  border-radius: var(--radius-lg); overflow: hidden; min-height: 340px;
+  background:
+    radial-gradient(110% 80% at 25% 15%, #ffe6bd, transparent 55%),
+    linear-gradient(150deg, #fff3df, #ffe0b3);
   display: grid; place-items: center; color: var(--accent-dark); box-shadow: var(--shadow);
-  font-size: 3rem;
+  position: relative;
 }
+.split-media.green {
+  background:
+    radial-gradient(110% 80% at 25% 15%, #d9f2e4, transparent 55%),
+    linear-gradient(150deg, #eaf7f0, #cdeeda);
+  color: #1f8a4c;
+}
+.split-media svg { width: 92px; height: 92px; opacity: .9; }
 .split ul { list-style: none; margin-top: 18px; }
 .split ul li { padding: 8px 0 8px 32px; position: relative; color: var(--ink-soft); }
 .split ul li::before {

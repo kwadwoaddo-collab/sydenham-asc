@@ -1,17 +1,18 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Icon from "../components/Icon.astro";
 ---
 <Layout title="After School Club in Sydenham | Childcare 3–8pm" active="club"
   description="Safe, stimulating after school childcare in Sydenham SE26, open 3pm–8pm. School pick-up service, homework help, activities and DBS-checked staff.">
 
   <section class="hero">
     <div class="container">
-      <span class="eyebrow" style="color:#ffd9a0;">After School Club</span>
+      <span class="eyebrow">After School Club</span>
       <h1>Childcare that feels like a home from home</h1>
       <p>Open 3pm to 8pm, term time. We pick your child up from school, keep them safe, fed and busy, and give you the flexibility your working day needs.</p>
       <div class="hero-actions">
         <a href="/contact" class="btn btn-primary">Book a Place</a>
-        <a href="/fees" class="btn btn-ghost">See Fees</a>
+        <a href="/fees" class="btn btn-outline">See Fees</a>
       </div>
     </div>
   </section>
@@ -30,7 +31,7 @@ import Layout from "../layouts/Layout.astro";
             <li>All staff experienced and DBS checked</li>
           </ul>
         </div>
-        <div class="split-media">🧸</div>
+        <div class="split-media"><Icon name="smile" size={92} /></div>
       </div>
     </div>
   </section>
@@ -42,12 +43,12 @@ import Layout from "../layouts/Layout.astro";
         <h2>Plenty to do every afternoon</h2>
       </div>
       <div class="grid grid-3">
-        <div class="card"><div class="ico">🎮</div><h3>Games consoles</h3><p>Wii, Xbox and more for supervised downtime and turn-taking fun.</p></div>
-        <div class="card"><div class="ico">🎲</div><h3>Board games</h3><p>Classic games that build teamwork, patience and problem-solving.</p></div>
-        <div class="card"><div class="ico">🎬</div><h3>Movie days</h3><p>Cosy film sessions and many more activities across the week.</p></div>
-        <div class="card"><div class="ico">📝</div><h3>Homework help</h3><p>A quiet space and a helping hand to get schoolwork done.</p></div>
-        <div class="card"><div class="ico">🍎</div><h3>Snacks</h3><p>A friendly, well-supervised environment to refuel and unwind.</p></div>
-        <div class="card"><div class="ico">🤝</div><h3>New friendships</h3><p>Meet children from schools across Sydenham and the surrounding area.</p></div>
+        <div class="card"><div class="ico"><Icon name="puzzle" size={28} /></div><h3>Games consoles</h3><p>Wii, Xbox and more for supervised downtime and turn-taking fun.</p></div>
+        <div class="card"><div class="ico green"><Icon name="sparkle" size={28} /></div><h3>Board games</h3><p>Classic games that build teamwork, patience and problem-solving.</p></div>
+        <div class="card"><div class="ico"><Icon name="smile" size={28} /></div><h3>Movie days</h3><p>Cosy film sessions and many more activities across the week.</p></div>
+        <div class="card"><div class="ico green"><Icon name="book" size={28} /></div><h3>Homework help</h3><p>A quiet space and a helping hand to get schoolwork done.</p></div>
+        <div class="card"><div class="ico"><Icon name="heart" size={28} /></div><h3>Snacks</h3><p>A friendly, well-supervised environment to refuel and unwind.</p></div>
+        <div class="card"><div class="ico green"><Icon name="users" size={28} /></div><h3>New friendships</h3><p>Meet children from schools across Sydenham and the surrounding area.</p></div>
       </div>
     </div>
   </section>
@@ -55,7 +56,7 @@ import Layout from "../layouts/Layout.astro";
   <section class="section">
     <div class="container">
       <div class="split reverse">
-        <div class="split-media">🚸</div>
+        <div class="split-media green"><Icon name="bus" size={92} /></div>
         <div>
           <span class="eyebrow">School pick-up service</span>
           <h2>We'll collect your child for you</h2>
@@ -88,7 +89,7 @@ import Layout from "../layouts/Layout.astro";
         <p>Pick-up spaces are limited by route and fill quickly. Message us today to check availability.</p>
         <div style="display:flex; gap:14px; justify-content:center; flex-wrap:wrap;">
           <a href="/contact" class="btn btn-navy">Book a Place</a>
-          <a href="https://wa.me/447943118873" class="btn btn-wa" target="_blank" rel="noopener">💬 WhatsApp Us</a>
+          <a href="https://wa.me/447943118873" class="btn btn-wa" target="_blank" rel="noopener">WhatsApp Us</a>
         </div>
       </div>
     </div>

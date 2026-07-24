@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Icon from "../components/Icon.astro";
 
 // Edit this list to add or remove openings. Set to [] to show "no current vacancies".
 const vacancies = [
@@ -34,12 +35,12 @@ const vacancies = [
 
   <section class="hero">
     <div class="container">
-      <span class="eyebrow" style="color:#ffd9a0;">Join the Team</span>
+      <span class="eyebrow">Join the Team</span>
       <h1>Help Sydenham's children aspire, achieve and excel</h1>
       <p>We're a friendly, growing team of tutors and childcare staff who genuinely love what we do. If you're brilliant with children and passionate about learning, we'd love to hear from you.</p>
       <div class="hero-actions">
         <a href="#apply" class="btn btn-primary">Apply Now</a>
-        <a href="#roles" class="btn btn-ghost">See Open Roles</a>
+        <a href="#roles" class="btn btn-outline">See Open Roles</a>
       </div>
     </div>
   </section>
@@ -54,7 +55,7 @@ const vacancies = [
 
       {vacancies.length === 0 ? (
         <div class="card center" style="max-width:640px;margin:0 auto;">
-          <div class="ico" style="margin:0 auto 12px;">📨</div>
+          <div class="ico" style="margin:0 auto 12px;"><Icon name="mail" size={28} /></div>
           <h3>No vacancies right now</h3>
           <p>We're not actively recruiting at the moment, but we're always glad to hear from great people. Send us your CV using the form below and we'll keep you in mind.</p>
         </div>
@@ -65,8 +66,8 @@ const vacancies = [
               <span class="tag">{v.type}</span>
               <h3 class="mt-1">{v.title}</h3>
               <div class="meta">
-                <span>📍 {v.location}</span>
-                <span>💷 {v.pay}</span>
+                <span><Icon name="pin" size={15} /> {v.location}</span>
+                <span><Icon name="pound" size={15} /> {v.pay}</span>
               </div>
               <p>{v.summary}</p>
               <p style="font-weight:700;color:var(--navy);margin-top:14px;">What we're looking for</p>
@@ -89,9 +90,9 @@ const vacancies = [
     <div class="container">
       <div class="center mb-3"><span class="eyebrow">Why work with us</span><h2>A team that feels like family</h2></div>
       <div class="grid grid-3">
-        <div class="card"><div class="ico">🌱</div><h3>Make a real difference</h3><p>Watch children grow in confidence week after week — the most rewarding part of the job.</p></div>
-        <div class="card"><div class="ico">🕒</div><h3>Flexible hours</h3><p>Afternoon, evening and Saturday sessions that can fit around your life and other commitments.</p></div>
-        <div class="card"><div class="ico">📈</div><h3>Grow with us</h3><p>Training, safeguarding qualifications and the chance to develop as an educator.</p></div>
+        <div class="card"><div class="ico green"><Icon name="heart" size={28} /></div><h3>Make a real difference</h3><p>Watch children grow in confidence week after week — the most rewarding part of the job.</p></div>
+        <div class="card"><div class="ico"><Icon name="clock" size={28} /></div><h3>Flexible hours</h3><p>Afternoon, evening and Saturday sessions that can fit around your life and other commitments.</p></div>
+        <div class="card"><div class="ico green"><Icon name="arrow" size={28} /></div><h3>Grow with us</h3><p>Training, safeguarding qualifications and the chance to develop as an educator.</p></div>
       </div>
     </div>
   </section>
@@ -105,9 +106,9 @@ const vacancies = [
           <h2>Send us your application</h2>
           <p class="lead" style="max-width:none;">Fill in the form and attach your CV. We read every application and will be in touch if there's a good fit. Prefer to chat first? Message us on WhatsApp or call.</p>
           <ul class="info-list mt-2">
-            <li><span class="ic">📞</span><div><b>Call us</b><a href="tel:07943118873">07943 118 873</a></div></li>
-            <li><span class="ic">✉️</span><div><b>Email</b><a href="mailto:info@sydenhamasc.co.uk">info@sydenhamasc.co.uk</a></div></li>
-            <li><span class="ic">💬</span><div><b>WhatsApp</b><a href="https://wa.me/447943118873" target="_blank" rel="noopener">Message us</a></div></li>
+            <li><span class="ic"><Icon name="phone" size={20} /></span><div><b>Call us</b><a href="tel:07943118873">07943 118 873</a></div></li>
+            <li><span class="ic"><Icon name="mail" size={20} /></span><div><b>Email</b><a href="mailto:info@sydenhamasc.co.uk">info@sydenhamasc.co.uk</a></div></li>
+            <li><span class="ic"><Icon name="chat" size={20} /></span><div><b>WhatsApp</b><a href="https://wa.me/447943118873" target="_blank" rel="noopener">Message us</a></div></li>
           </ul>
         </div>
 

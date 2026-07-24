@@ -1,12 +1,13 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Icon from "../components/Icon.astro";
 ---
 <Layout title="About Us | Sydenham After School Club" active="about"
   description="Sydenham After School Club has supported local families for over eight years with safe childcare and expert tuition in the heart of SE26.">
 
   <section class="hero">
     <div class="container">
-      <span class="eyebrow" style="color:#ffd9a0;">About Us</span>
+      <span class="eyebrow">About Us</span>
       <h1>Rooted in Sydenham, trusted by families</h1>
       <p>For over eight years we've given local children a safe place to learn, play and grow — and given parents the flexibility and peace of mind they need.</p>
     </div>
@@ -21,7 +22,7 @@ import Layout from "../layouts/Layout.astro";
           <p class="lead" style="max-width:none;">Sydenham After School Club brings together quality childcare and serious academic support under one roof. We help children practically apply what they learn, guided every step of the way by dedicated tutors.</p>
           <p style="margin-top:14px;color:var(--ink-soft);">We have eight consecutive years of experience offering after-school care. Our seasoned tutors have taught the British system for decades, and we're located in a prime, easy-to-reach part of Sydenham — open every day of the week.</p>
         </div>
-        <div class="split-media">🏫</div>
+        <div class="split-media"><Icon name="heart" size={92} /></div>
       </div>
     </div>
   </section>
@@ -30,9 +31,9 @@ import Layout from "../layouts/Layout.astro";
     <div class="container">
       <div class="center mb-3"><span class="eyebrow">What we stand for</span><h2>Aspire · Achieve · Excel</h2></div>
       <div class="grid grid-3">
-        <div class="card"><div class="ico">🌟</div><h3>Aspire</h3><p>We raise every child's sights, helping them believe in what they can accomplish.</p></div>
-        <div class="card"><div class="ico">🎯</div><h3>Achieve</h3><p>Individual programmes and small groups turn effort into real, measurable progress.</p></div>
-        <div class="card"><div class="ico">🏆</div><h3>Excel</h3><p>We nurture the confidence and skills children carry with them for life.</p></div>
+        <div class="card"><div class="ico"><Icon name="sparkle" size={28} /></div><h3>Aspire</h3><p>We raise every child's sights, helping them believe in what they can accomplish.</p></div>
+        <div class="card"><div class="ico green"><Icon name="check" size={28} /></div><h3>Achieve</h3><p>Individual programmes and small groups turn effort into real, measurable progress.</p></div>
+        <div class="card"><div class="ico"><Icon name="star" size={28} /></div><h3>Excel</h3><p>We nurture the confidence and skills children carry with them for life.</p></div>
       </div>
     </div>
   </section>
@@ -40,7 +41,7 @@ import Layout from "../layouts/Layout.astro";
   <section class="section">
     <div class="container">
       <div class="split reverse">
-        <div class="split-media">🛡️</div>
+        <div class="split-media green"><Icon name="shield" size={92} /></div>
         <div>
           <span class="eyebrow">Safety first, always</span>
           <h2>Safeguarding you can trust</h2>
@@ -62,7 +63,7 @@ import Layout from "../layouts/Layout.astro";
         <p>The best way to get a feel for our club is to visit. Get in touch to arrange a look around.</p>
         <div style="display:flex; gap:14px; justify-content:center; flex-wrap:wrap;">
           <a href="/contact" class="btn btn-navy">Arrange a Visit</a>
-          <a href="/join-us" class="btn btn-ghost">Work With Us</a>
+          <a href="/join-us" class="btn btn-outline">Work With Us</a>
         </div>
       </div>
     </div>

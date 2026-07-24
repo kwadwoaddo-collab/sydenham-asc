@@ -1,17 +1,18 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Icon from "../components/Icon.astro";
 ---
 <Layout title="Tuition & GCSE in Sydenham | Maths & English" active="tuition"
   description="Expert Maths and English tuition in Sydenham SE26. Individualised programmes by GCSE and SATs examiners, small 1:6 groups, sessions Monday to Saturday.">
 
   <section class="hero">
     <div class="container">
-      <span class="eyebrow" style="color:#ffd9a0;">Tuition &amp; GCSE</span>
+      <span class="eyebrow">Tuition &amp; GCSE</span>
       <h1>Tuition that stretches every child in exactly the right areas</h1>
       <p>Individualised Maths and English programmes, built by official GCSE and SATs examiners and taught in small groups of no more than six.</p>
       <div class="hero-actions">
         <a href="/contact" class="btn btn-primary">Enquire About Tuition</a>
-        <a href="#sessions" class="btn btn-ghost">Session Times</a>
+        <a href="#sessions" class="btn btn-outline">Session Times</a>
       </div>
     </div>
   </section>
@@ -25,7 +26,7 @@ import Layout from "../layouts/Layout.astro";
           <p class="lead" style="max-width:none;">Every child has their own individualised programme of study which strengthens their weaknesses and reinforces their strengths. This ensures children are stretched and challenged in exactly the right areas — never bored, never left behind.</p>
           <p style="margin-top:14px; color:var(--ink-soft);">Sessions last approximately 1 hour and 20 minutes. Our tutors work at a maximum ratio of 1:6, striking the right balance between individual support and independent learning. As children practise and acquire new skills, a tutor is always on hand to encourage, explain or teach a new concept.</p>
         </div>
-        <div class="split-media">📚</div>
+        <div class="split-media"><Icon name="book" size={92} /></div>
       </div>
     </div>
   </section>
@@ -33,9 +34,9 @@ import Layout from "../layouts/Layout.astro";
   <section class="section section-soft">
     <div class="container">
       <div class="grid grid-3">
-        <div class="card"><div class="ico">🧮</div><h3>Maths</h3><p>From primary foundations through to GCSE, following a programme developed by official examiners.</p></div>
-        <div class="card"><div class="ico">✍️</div><h3>English</h3><p>Reading, writing and comprehension that build genuine confidence and exam readiness.</p></div>
-        <div class="card"><div class="ico">🎯</div><h3>SATs &amp; GCSE</h3><p>Targeted preparation for key milestones, with methods trusted by exam markers themselves.</p></div>
+        <div class="card"><div class="ico"><Icon name="puzzle" size={28} /></div><h3>Maths</h3><p>From primary foundations through to GCSE, following a programme developed by official examiners.</p></div>
+        <div class="card"><div class="ico green"><Icon name="book" size={28} /></div><h3>English</h3><p>Reading, writing and comprehension that build genuine confidence and exam readiness.</p></div>
+        <div class="card"><div class="ico"><Icon name="star" size={28} /></div><h3>SATs &amp; GCSE</h3><p>Targeted preparation for key milestones, with methods trusted by exam markers themselves.</p></div>
       </div>
     </div>
   </section>
@@ -43,7 +44,7 @@ import Layout from "../layouts/Layout.astro";
   <section class="section">
     <div class="container">
       <div class="split reverse">
-        <div class="split-media">👩‍🏫</div>
+        <div class="split-media green"><Icon name="users" size={92} /></div>
         <div>
           <span class="eyebrow">Customised tutoring</span>
           <h2>Individual attention, real results</h2>
@@ -79,7 +80,7 @@ import Layout from "../layouts/Layout.astro";
         <p>Tell us your child's year group and the subjects they need support with, and we'll recommend the right sessions.</p>
         <div style="display:flex; gap:14px; justify-content:center; flex-wrap:wrap;">
           <a href="/contact" class="btn btn-navy">Enquire Now</a>
-          <a href="https://wa.me/447943118873" class="btn btn-wa" target="_blank" rel="noopener">💬 WhatsApp Us</a>
+          <a href="https://wa.me/447943118873" class="btn btn-wa" target="_blank" rel="noopener">WhatsApp Us</a>
         </div>
       </div>
     </div>

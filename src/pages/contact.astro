@@ -1,12 +1,13 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Icon from "../components/Icon.astro";
 ---
 <Layout title="Contact & Book a Place | Sydenham After School Club" active="contact"
   description="Contact Sydenham After School Club in SE26. Call 07943 118 873, email info@sydenhamasc.co.uk, or send an enquiry to book your child's place.">
 
   <section class="hero">
     <div class="container">
-      <span class="eyebrow" style="color:#ffd9a0;">Contact &amp; Book</span>
+      <span class="eyebrow">Contact &amp; Book</span>
       <h1>Book a place or ask us anything</h1>
       <p>Tell us a little about your child and what you need. We'll get back to you quickly with availability and next steps.</p>
     </div>
@@ -20,10 +21,10 @@ import Layout from "../layouts/Layout.astro";
           <h2>We're here to help</h2>
           <p class="lead" style="max-width:none;">Call, WhatsApp, email or use the form — whatever's easiest. We're open every day and always happy to talk through options.</p>
           <ul class="info-list mt-2">
-            <li><span class="ic">📞</span><div><b>Phone</b><a href="tel:07943118873">07943 118 873</a></div></li>
-            <li><span class="ic">💬</span><div><b>WhatsApp</b><a href="https://wa.me/447943118873" target="_blank" rel="noopener">Message us instantly</a></div></li>
-            <li><span class="ic">✉️</span><div><b>Email</b><a href="mailto:info@sydenhamasc.co.uk">info@sydenhamasc.co.uk</a></div></li>
-            <li><span class="ic">📍</span><div><b>Visit</b>105 Sydenham Road, London SE26 5UA</div></li>
+            <li><span class="ic"><Icon name="phone" size={20} /></span><div><b>Phone</b><a href="tel:07943118873">07943 118 873</a></div></li>
+            <li><span class="ic"><Icon name="chat" size={20} /></span><div><b>WhatsApp</b><a href="https://wa.me/447943118873" target="_blank" rel="noopener">Message us instantly</a></div></li>
+            <li><span class="ic"><Icon name="mail" size={20} /></span><div><b>Email</b><a href="mailto:info@sydenhamasc.co.uk">info@sydenhamasc.co.uk</a></div></li>
+            <li><span class="ic"><Icon name="pin" size={20} /></span><div><b>Visit</b>105 Sydenham Road, London SE26 5UA</div></li>
           </ul>
         </div>
 
