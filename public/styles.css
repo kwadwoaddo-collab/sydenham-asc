@@ -189,8 +189,8 @@ h3 { font-size: 1.3rem; font-weight: 600; letter-spacing: -0.01em; }
 .proof-chip .pc-ic { width: 34px; height: 34px; border-radius: 10px; display: grid; place-items: center; flex-shrink: 0; }
 .pc-y { background: #fff4c9; color: var(--accent-dark); }
 .pc-g { background: #e4f6ec; color: #1f8a4c; }
-.proof-chip-ofsted { padding: 9px 16px; }
-.proof-chip-ofsted img { height: 38px; width: auto; display: block; }
+.proof-chip-ofsted { padding: 14px 18px; align-items: stretch; justify-content: center; }
+.proof-chip-ofsted img { height: 100%; width: auto; max-width: 100%; display: block; object-fit: contain; align-self: center; }
 .stars-row { color: var(--accent); letter-spacing: 2px; font-size: .95rem; }
 
 /* ---------- Cards / grids ---------- */
