@@ -1,4 +1,5 @@
 ---
+import Icon from "../components/Icon.astro";
 const {
   title = "Sydenham After School Club",
   description = "Caring after school club and expert tuition in Sydenham SE26. Wraparound childcare 7am–9pm, school drop-offs and pick-ups, and GCSE & SATs tuition. Book your child's place today.",
@@ -96,6 +97,12 @@ const nav = [
             trusted by local families for over ten years.
           </p>
           <img src="/photos/ofsted.svg" alt="Ofsted registered" style="height:58px; width:auto; margin-top:18px; background:#fff; border-radius:10px; padding:6px 12px;" />
+          <!-- TODO: replace # with your real profile URLs once the pages exist -->
+          <div class="social-row">
+            <a href="#" target="_blank" rel="noopener" aria-label="Facebook"><Icon name="facebook" size={19} /></a>
+            <a href="#" target="_blank" rel="noopener" aria-label="Instagram"><Icon name="instagram" size={19} /></a>
+            <a href="#" target="_blank" rel="noopener" aria-label="X (Twitter)"><Icon name="x" size={19} /></a>
+          </div>
         </div>
         <div>
           <h4>Explore</h4>
