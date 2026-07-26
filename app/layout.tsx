@@ -11,6 +11,7 @@ export const metadata: Metadata = {
 const nav = [
   { href: "/after-school-club", label: "After School Club", key: "club" },
   { href: "/tuition", label: "Tuition & GCSE", key: "tuition" },
+  { href: "/free-assessment", label: "Free Assessment", key: "assessment" },
   { href: "/fees", label: "Fees", key: "fees" },
   { href: "/join-us", label: "Join the Team", key: "join" },
   { href: "/about", label: "About", key: "about" },
