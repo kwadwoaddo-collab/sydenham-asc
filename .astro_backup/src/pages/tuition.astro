@@ -34,11 +34,11 @@ import Icon from "../components/Icon.astro";
   <section class="section section-soft">
     <div class="container">
       <div class="center mb-3"><span class="eyebrow">Subjects &amp; levels</span><h2>Maths, English &amp; Science — Primary to A-Level</h2></div>
-      <div class="grid grid-4">
-        <div class="card"><div class="ico"><Icon name="puzzle" size={28} /></div><h3>Maths</h3><p>From primary foundations through to GCSE and A-Level, following a programme developed by official examiners.</p></div>
-        <div class="card"><div class="ico green"><Icon name="book" size={28} /></div><h3>English</h3><p>Reading, writing and comprehension that build genuine confidence and exam readiness.</p></div>
-        <div class="card"><div class="ico"><Icon name="sparkle" size={28} /></div><h3>Science</h3><p>Biology, Chemistry and Physics fundamentals taught clearly, from primary through to GCSE.</p></div>
-        <div class="card"><div class="ico green"><Icon name="star" size={28} /></div><h3>11+, SATs, GCSE &amp; A-Level</h3><p>Targeted exam preparation for every key milestone, with methods trusted by examiners themselves.</p></div>
+      <div class="grid grid-auto">
+        <div class="card compact"><div class="ico"><Icon name="puzzle" size={24} /></div><div><h3>Maths</h3><p>Primary to A-Level, built by examiners.</p></div></div>
+        <div class="card compact"><div class="ico green"><Icon name="book" size={24} /></div><div><h3>English</h3><p>Reading, writing and comprehension.</p></div></div>
+        <div class="card compact"><div class="ico"><Icon name="sparkle" size={24} /></div><div><h3>Science</h3><p>Biology, Chemistry and Physics.</p></div></div>
+        <div class="card compact"><div class="ico green"><Icon name="star" size={24} /></div><div><h3>Exam Prep</h3><p>11+, SATs, GCSE &amp; A-Level targeted prep.</p></div></div>
       </div>
       <p class="form-note center" style="margin-top:22px;">We follow the Excel programme of study in Maths and English, developed by official GCSE and SATs examiners. Read our <a href="https://www.excelcentres.co.uk/gcses-guide/" target="_blank" rel="noopener">GCSE Guide</a> and <a href="https://www.excelcentres.co.uk/sats-guide/" target="_blank" rel="noopener">SATs Guide</a> to learn more.</p>
     </div>
@@ -68,11 +68,15 @@ import Icon from "../components/Icon.astro";
     <div class="container">
       <div class="center mb-3"><span class="eyebrow">Session times</span><h2>When tuition runs</h2></div>
       <div style="max-width:640px; margin:0 auto;">
-        <table class="price-table">
-          <tr><th>Days</th><th>Sessions</th></tr>
-          <tr><td>Monday – Friday</td><td>4:30pm – 5:50pm &nbsp;•&nbsp; 6:00pm – 7:20pm</td></tr>
-          <tr><td>Saturday</td><td>10:00am – 11:20am &nbsp;•&nbsp; 11:30am – 12:50pm &nbsp;•&nbsp; 1:00pm – 2:20pm</td></tr>
-        </table>
+        <div class="table-responsive">
+          <table class="price-table compact">
+            <thead><tr><th>Days</th><th>Sessions</th></tr></thead>
+            <tbody>
+              <tr><td>Monday – Friday</td><td>4:30pm – 5:50pm &nbsp;•&nbsp; 6:00pm – 7:20pm</td></tr>
+              <tr><td>Saturday</td><td>10:00am – 11:20am &nbsp;•&nbsp; 11:30am – 12:50pm &nbsp;•&nbsp; 1:00pm – 2:20pm</td></tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   </section>

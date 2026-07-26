@@ -42,13 +42,13 @@ import Icon from "../components/Icon.astro";
         <span class="eyebrow">Kept busy &amp; happy</span>
         <h2>Plenty to do every afternoon</h2>
       </div>
-      <div class="grid grid-3">
-        <div class="card"><div class="ico"><Icon name="puzzle" size={28} /></div><h3>STEM &amp; robotics</h3><p>Coding and robotics kits, plus games consoles for supervised downtime and turn-taking fun.</p></div>
-        <div class="card"><div class="ico green"><Icon name="sparkle" size={28} /></div><h3>Board games</h3><p>Classic games that build teamwork, patience and problem-solving.</p></div>
-        <div class="card"><div class="ico"><Icon name="smile" size={28} /></div><h3>Movie days</h3><p>Cosy film sessions and many more activities across the week.</p></div>
-        <div class="card"><div class="ico green"><Icon name="book" size={28} /></div><h3>Homework help</h3><p>A quiet space and a helping hand to get schoolwork done.</p></div>
-        <div class="card"><div class="ico"><Icon name="heart" size={28} /></div><h3>Snacks</h3><p>A friendly, well-supervised environment to refuel and unwind.</p></div>
-        <div class="card"><div class="ico green"><Icon name="users" size={28} /></div><h3>New friendships</h3><p>Meet children from schools across Sydenham and the surrounding area.</p></div>
+      <div class="grid grid-auto">
+        <div class="card compact"><div class="ico"><Icon name="puzzle" size={24} /></div><div><h3>STEM &amp; robotics</h3><p>Coding kits &amp; games consoles.</p></div></div>
+        <div class="card compact"><div class="ico green"><Icon name="sparkle" size={24} /></div><div><h3>Board games</h3><p>Build teamwork &amp; problem-solving.</p></div></div>
+        <div class="card compact"><div class="ico"><Icon name="smile" size={24} /></div><div><h3>Movie days</h3><p>Cosy film sessions &amp; activities.</p></div></div>
+        <div class="card compact"><div class="ico green"><Icon name="book" size={24} /></div><div><h3>Homework help</h3><p>A quiet space to get work done.</p></div></div>
+        <div class="card compact"><div class="ico"><Icon name="heart" size={24} /></div><div><h3>Snacks</h3><p>Supervised environment to refuel.</p></div></div>
+        <div class="card compact"><div class="ico green"><Icon name="users" size={24} /></div><div><h3>New friendships</h3><p>Meet children from across SE26.</p></div></div>
       </div>
     </div>
   </section>
@@ -71,13 +71,17 @@ import Icon from "../components/Icon.astro";
     <div class="container">
       <div class="center mb-3"><span class="eyebrow">Opening hours</span><h2>When we're open</h2></div>
       <div style="max-width:640px; margin:0 auto;">
-        <table class="price-table">
-          <tr><th>Session</th><th>Days</th><th>Hours</th></tr>
-          <tr><td>Morning Club &amp; school drop-off</td><td>Monday – Friday</td><td>7:00am – 9:00am</td></tr>
-          <tr><td>After School Club</td><td>Monday – Friday</td><td>3:00pm – 9:00pm</td></tr>
-          <tr><td>Saturday Club</td><td>Saturday</td><td>9:00am – 4:00pm</td></tr>
-          <tr><td>Holiday Club</td><td>Monday – Saturday</td><td>9:00am – 4:00pm</td></tr>
-        </table>
+        <div class="table-responsive">
+          <table class="price-table compact">
+            <thead><tr><th>Session</th><th>Days</th><th>Hours</th></tr></thead>
+            <tbody>
+              <tr><td>Morning Club &amp; school drop-off</td><td>Monday – Friday</td><td>7:00am – 9:00am</td></tr>
+              <tr><td>After School Club</td><td>Monday – Friday</td><td>3:00pm – 9:00pm</td></tr>
+              <tr><td>Saturday Club</td><td>Saturday</td><td>9:00am – 4:00pm</td></tr>
+              <tr><td>Holiday Club</td><td>Monday – Saturday</td><td>9:00am – 4:00pm</td></tr>
+            </tbody>
+          </table>
+        </div>
         <p class="form-note center" style="margin-top:14px;">Please confirm current session times when you book — holiday club dates follow the school calendar.</p>
       </div>
     </div>
