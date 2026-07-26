@@ -3,6 +3,7 @@ import './globals.css';
 import Link from 'next/link';
 import Image from 'next/image';
 import { AuthProvider } from '@/lib/AuthContext';
+import ClientLayoutWrapper from '@/components/ClientLayoutWrapper';
 
 export const metadata: Metadata = {
   title: 'Sydenham After School Club',
@@ -33,7 +34,9 @@ export default function RootLayout({
         <meta name="theme-color" content="#2c2a26" />
       </head>
       <body>
-        <header className="site-header">
+        <ClientLayoutWrapper
+          header={
+            <header className="site-header">
           <div className="container nav">
             <Link className="brand" href="/">
               <img src="/photos/logo.png" alt="Sydenham After School Club" className="brand-logo" />
@@ -50,14 +53,9 @@ export default function RootLayout({
             </div>
           </div>
         </header>
-
-        <main>
-          <AuthProvider>
-            {children}
-          </AuthProvider>
-        </main>
-
-        <footer className="site-footer">
+          }
+          footer={
+            <footer className="site-footer">
           <div className="container">
             <div className="footer-grid">
               <div>
@@ -95,10 +93,14 @@ export default function RootLayout({
               <span>© {new Date().getFullYear()} Sydenham After School Club. All rights reserved.</span>
               <span>All staff DBS checked &amp; safeguarding trained.</span>
             </div>
-          </div>
-        </footer>
-
-        <a className="wa-float" href="https://wa.me/447584874710" aria-label="WhatsApp us" target="_blank" rel="noopener noreferrer">💬</a>
+            </div>
+          </footer>
+          }
+        >
+          <AuthProvider>
+            {children}
+          </AuthProvider>
+        </ClientLayoutWrapper>
       </body>
     </html>
   );
