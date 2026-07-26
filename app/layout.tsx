@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import Link from 'next/link';
 import Image from 'next/image';
+import { AuthProvider } from '@/lib/AuthContext';
 
 export const metadata: Metadata = {
   title: 'Sydenham After School Club',
@@ -51,7 +52,9 @@ export default function RootLayout({
         </header>
 
         <main>
-          {children}
+          <AuthProvider>
+            {children}
+          </AuthProvider>
         </main>
 
         <footer className="site-footer">
