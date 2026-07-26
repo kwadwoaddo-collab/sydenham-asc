@@ -95,7 +95,7 @@ export default function AdminDashboard() {
           </button>
         </div>
 
-        <div className="bg-white/5 backdrop-blur-2xl border border-white/10 rounded-[32px] p-8 shadow-2xl overflow-hidden">
+        <div className="glass-panel rounded-[32px] p-8 overflow-hidden">
           {fetching ? (
             <div className="flex justify-center items-center py-20">
               <p className="text-white/60 text-lg">Loading bookings...</p>
