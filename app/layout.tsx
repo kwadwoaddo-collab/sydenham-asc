@@ -65,7 +65,7 @@ export default function RootLayout({
                   trusted by local families for over ten years.
                 </p>
                 <img src="/photos/ofsted.svg" alt="Ofsted registered" style={{height:'58px', width:'auto', marginTop:'18px', background:'#fff', borderRadius:'10px', padding:'6px 12px'}} />
-                <p style={{marginTop:'8px', fontWeight: 'bold', color: '#fff'}}>Ofsted URN: EY123456</p>
+
               </div>
               <div>
                 <h4>Explore</h4>
@@ -88,7 +88,7 @@ export default function RootLayout({
               </div>
             </div>
             <div className="footer-bottom">
-              <span>© {new Date().getFullYear()} Sydenham After School Club. All rights reserved. Ofsted URN: EY123456</span>
+              <span>© {new Date().getFullYear()} Sydenham After School Club. All rights reserved.</span>
               <span>All staff DBS checked &amp; safeguarding trained.</span>
             </div>
           </div>
