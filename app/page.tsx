@@ -227,10 +227,13 @@ export default function HomePage() {
           <div className="cta-band">
             <h2>Ready to book your child's place?</h2>
             <p>Spaces fill up fast, especially for after school pick-ups. Get in touch today and we'll walk you through everything.</p>
-            <div style={{display:'flex', gap:'14px', justifyContent:'center', flexWrap:'wrap'}}>
+            <div style={{display:'flex', gap:'14px', justifyContent:'center', flexWrap:'wrap', marginBottom:'20px'}}>
               <Link href="/contact" className="btn btn-navy">Book a Place</Link>
               <a href="https://wa.me/447584874710" className="btn btn-wa" target="_blank" rel="noopener noreferrer">WhatsApp Us</a>
             </div>
+            <p style={{fontSize:'.95rem', margin:0, opacity: 0.95}}>
+              Learn more about the individuals running the organisation on our <Link href="/leadership" style={{color:'var(--accent)', textDecoration:'underline', fontWeight:'bold'}}>Leadership Team</Link> page.
+            </p>
           </div>
         </div>
       </section>
