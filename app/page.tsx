@@ -40,7 +40,7 @@ export default function HomePage() {
           <div className="services">
             <div className="service club">
               <h3>After School Club</h3>
-              <span className="tag-line">Childcare · 3pm–9pm, with school runs from 7am</span>
+              <span className="tag-line">Childcare · 3pm–9pm</span>
               <p>A safe, friendly place for your child once the school day ends, with pick-ups from local schools.</p>
               <ul>
                 <li><Icon name="check" /> School drop-off and pick-up</li>
@@ -141,7 +141,7 @@ export default function HomePage() {
             </figure>
           </div>
           <ul className="facts" style={{ marginTop: 56 }}>
-            <li><strong>10+ years</strong><span>in Sydenham</span></li>
+            <li><strong>2016</strong><span>established, in Sydenham</span></li>
             <li><strong>1:6</strong><span>maximum tuition ratio</span></li>
             <li><strong>3–9pm</strong><span>after school hours</span></li>
             <li><strong>DBS checked</strong><span>all staff</span></li>

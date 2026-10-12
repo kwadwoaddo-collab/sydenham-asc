@@ -38,7 +38,7 @@ export default function RootLayout({
                       <Image src="/photos/logo.png" alt="" width={97} height={52} className="brand-logo" />
                     </Link>
                     <p style={{ marginTop: 16, maxWidth: 340 }}>
-                      A safe, friendly after school club and tuition centre in the heart of Sydenham — trusted by local families for over ten years.
+                      A safe, friendly after school club and tuition centre in the heart of Sydenham — trusted by local families. Established in 2016.
                     </p>
                   </div>
                   <nav aria-label="Footer">

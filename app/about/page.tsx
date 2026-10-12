@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: "About Us | Sydenham After School Club",
-  description: "Sydenham After School Club has supported local families for over ten years with safe childcare and expert tuition in the heart of SE26.",
+  description: "Sydenham After School Club was established in 2016 and supports local families with safe childcare and expert tuition in the heart of SE26.",
 };
 
 export default function Page() {
@@ -13,7 +13,7 @@ export default function Page() {
       <section className="hero">
         <div className="container">
           <h1>Rooted in Sydenham, trusted by families</h1>
-          <p>For over ten years we&apos;ve given local children a safe place to learn, play and grow — and given parents the flexibility and peace of mind they need.</p>
+          <p>Established in 2016, we&apos;ve given local children a safe place to learn, play and grow — and given parents the flexibility and peace of mind they need.</p>
         </div>
       </section>
 
@@ -23,7 +23,7 @@ export default function Page() {
             <div>
               <h2>Situated in the heart of London</h2>
               <p className="lead">Sydenham After School Club brings together quality childcare and serious academic support under one roof. We help children practically apply what they learn, guided every step of the way by dedicated tutors.</p>
-              <p className="form-note" style={{ fontSize: '1.02rem' }}>We have ten consecutive years of experience offering after-school care. Our seasoned tutors have taught the British system for decades, and we&apos;re located in a prime, easy-to-reach part of Sydenham — open every day of the week.</p>
+              <p className="form-note" style={{ fontSize: '1.02rem' }}>Established in 2016, we offer after-school care. Our seasoned tutors have taught the British system for decades, and we&apos;re located in a prime, easy-to-reach part of Sydenham — open every day of the week.</p>
             </div>
             <div className="split-media"><Image src="/photos/brand-banner.jpg" alt="Sydenham After School Club shopfront and signage" width={982} height={768} sizes="(min-width: 860px) 540px, 100vw" /></div>
           </div>
