@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { useAuth } from "@/lib/AuthContext";
+import { flattenBookingContact } from "@/lib/bookingContact";
 import { auth, db } from "@/lib/firebase";
 import { signOut } from "firebase/auth";
 import { collection, getDocs, orderBy, query, doc, deleteDoc, updateDoc } from "firebase/firestore";
@@ -50,7 +51,7 @@ export default function AdminDashboard() {
       const snapshot = await getDocs(q);
       const data: Booking[] = [];
       snapshot.forEach((doc) => {
-        data.push({ id: doc.id, ...doc.data() } as Booking);
+        data.push({ id: doc.id, ...flattenBookingContact(doc.data()) } as Booking);
       });
       setBookings(data);
     } catch (error) {
@@ -59,7 +60,7 @@ export default function AdminDashboard() {
         const snapshot = await getDocs(collection(db, "bookings"));
         const data: Booking[] = [];
         snapshot.forEach((doc) => {
-          data.push({ id: doc.id, ...doc.data() } as Booking);
+          data.push({ id: doc.id, ...flattenBookingContact(doc.data()) } as Booking);
         });
         setBookings(data);
       } catch (e) {
