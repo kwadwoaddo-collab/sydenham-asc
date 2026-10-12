@@ -9,31 +9,22 @@ export default function FreeAssessmentPage() {
   return (
     <>
       <section className="hero">
-        <div className="container center">
-          <span className="eyebrow">Book a Session</span>
-          <h1 style={{ maxWidth: '800px', margin: '0 auto' }}>Free Assessment</h1>
-          <p style={{ maxWidth: '600px', margin: '0 auto', opacity: 0.9 }}>
-            Use the portal below to find a time that works for you and instantly book your free assessment session.
-          </p>
+        <div className="container">
+          <h1>Free assessment</h1>
+          <p>Use the portal below to find a time that works for you and instantly book your free assessment session.</p>
+          <p className="form-note" style={{ margin: 0 }}>Prefer to talk first? <a href="tel:07584874710">Call 075 8487 4710</a> or <a href="https://wa.me/447584874710" target="_blank" rel="noopener noreferrer">message us on WhatsApp</a>.</p>
         </div>
       </section>
 
       <section className="section section-soft">
-        <div className="container" style={{ maxWidth: '1000px' }}>
-          <div style={{ 
-            background: '#fff', 
-            borderRadius: '24px', 
-            padding: '8px', 
-            boxShadow: 'var(--shadow-lg)' 
-          }}>
-            <iframe 
-              src="https://after-school-club-live.vercel.app/b/sydenham-after-school-club-ltd/sydenham-after-school-club-yfbc5" 
-              width="100%" 
-              height="1000" 
-              frameBorder="0" 
-              style={{ border: 0, width: '100%', minHeight: '1000px', borderRadius: '16px', overflow: 'hidden' }} 
-              allow="clipboard-write">
-            </iframe>
+        <div className="container" style={{ maxWidth: 1000 }}>
+          <div className="embed-wrap">
+            <iframe
+              title="Free assessment booking portal"
+              src="https://after-school-club-live.vercel.app/b/sydenham-after-school-club-ltd/sydenham-after-school-club-yfbc5"
+              height="1000"
+              allow="clipboard-write"
+            />
           </div>
         </div>
       </section>

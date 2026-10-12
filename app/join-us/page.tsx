@@ -1,6 +1,7 @@
 
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Icon from '@/components/Icon';
 
 export const metadata: Metadata = {
   title: "Join the Team | Careers at Sydenham ASC",
@@ -15,7 +16,7 @@ export default function Page() {
 
   <section className="hero">
     <div className="container">
-      <span className="eyebrow">Join the Team</span>
+      
       <h1>Help Sydenham's children aspire, achieve and excel</h1>
       <p>We're a friendly, growing team of tutors and childcare staff who genuinely love what we do. If you're brilliant with children and passionate about learning, we'd love to hear from you.</p>
       <div className="hero-actions">
@@ -27,15 +28,14 @@ export default function Page() {
 
   <section className="section" id="roles">
     <div className="container">
-      <div className="center mb-3">
-        <span className="eyebrow">Current openings</span>
+      <div className="sec-head">
         <h2>Roles we're hiring for</h2>
         <p className="lead">All roles are based at our Sydenham centre. Enhanced DBS checks and safeguarding training are part of the job.</p>
       </div>
 
       {vacancies.length === 0 ? (
-        <div className="card center" style={{"maxWidth":"640px","margin":"0 auto"}}>
-          <div className="ico" style={{"margin":"0 auto 12px"}}><span className="ic">✉️</span></div>
+        <div className="card" style={{"maxWidth":"640px"}}>
+          
           <h3>No vacancies right now</h3>
           <p>We're not actively recruiting at the moment, but we're always glad to hear from great people. Send us your CV using the form below and we'll keep you in mind.</p>
         </div>
@@ -46,8 +46,8 @@ export default function Page() {
               <span className="tag">{v.type}</span>
               <h3 className="mt-1">{v.title}</h3>
               <div className="meta">
-                <span><span className="ic">📍</span> {v.location}</span>
-                <span><span className="ic">£</span> {v.pay}</span>
+                <span>{v.location}</span>
+                <span>{v.pay}</span>
               </div>
               <p>{v.summary}</p>
               <p style={{"fontWeight":"700","color":"var(--navy)","marginTop":"14px"}}>What we're looking for</p>
@@ -68,11 +68,11 @@ export default function Page() {
 
   <section className="section section-soft">
     <div className="container">
-      <div className="center mb-3"><span className="eyebrow">Why work with us</span><h2>A team that feels like family</h2></div>
-      <div className="grid grid-3">
-        <div className="card"><div className="ico green"><span className="ic">•</span></div><h3>Make a real difference</h3><p>Watch children grow in confidence week after week — the most rewarding part of the job.</p></div>
-        <div className="card"><div className="ico"><span className="ic">⏰</span></div><h3>Flexible hours</h3><p>Afternoon, evening and Saturday sessions that can fit around your life and other commitments.</p></div>
-        <div className="card"><div className="ico green"><span className="ic">•</span></div><h3>Grow with us</h3><p>Training, safeguarding qualifications and the chance to develop as an educator.</p></div>
+      <div className="sec-head"><h2>A team that feels like family</h2></div>
+      <div className="feature-list cols-3">
+        <div className="feature"><span className="icon-chip green"><Icon name="heart" /></span><div><h3>Make a real difference</h3><p>Watch children grow in confidence week after week — the most rewarding part of the job.</p></div></div>
+        <div className="feature"><span className="icon-chip"><Icon name="clock" /></span><div><h3>Flexible hours</h3><p>Afternoon, evening and Saturday sessions that can fit around your life and other commitments.</p></div></div>
+        <div className="feature"><span className="icon-chip green"><Icon name="star" /></span><div><h3>Grow with us</h3><p>Training, safeguarding qualifications and the chance to develop as an educator.</p></div></div>
       </div>
     </div>
   </section>
@@ -82,13 +82,13 @@ export default function Page() {
     <div className="container">
       <div className="split">
         <div>
-          <span className="eyebrow">Apply</span>
+          
           <h2>Send us your application</h2>
           <p className="lead" style={{"maxWidth":"none"}}>Fill in the form and attach your CV. We read every application and will be in touch if there's a good fit. Prefer to chat first? Message us on WhatsApp or call.</p>
           <ul className="info-list mt-2">
-            <li><span className="ic"><span className="ic">📱</span></span><div><b>Call us</b><a href="tel:07584874710">075 8487 4710</a></div></li>
-            <li><span className="ic"><span className="ic">✉️</span></span><div><b>Email</b><a href="mailto:info@sydenhamasc.co.uk">info@sydenhamasc.co.uk</a></div></li>
-            <li><span className="ic"><span className="ic">💬</span></span><div><b>WhatsApp</b><a href="https://wa.me/447584874710" target="_blank" rel="noopener">Message us</a></div></li>
+            <li><span className="ic"><Icon name="phone" /></span><div><b>Call us</b><a href="tel:07584874710">075 8487 4710</a></div></li>
+            <li><span className="ic"><Icon name="mail" /></span><div><b>Email</b><a href="mailto:info@sydenhamasc.co.uk">info@sydenhamasc.co.uk</a></div></li>
+            <li><span className="ic"><Icon name="whatsapp" /></span><div><b>WhatsApp</b><a href="https://wa.me/447584874710" target="_blank" rel="noopener">Message us</a></div></li>
           </ul>
         </div>
 
