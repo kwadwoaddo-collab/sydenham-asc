@@ -43,13 +43,12 @@ export default function Page() {
 
       <section className="section">
         <div className="container">
-          <div className="split reverse">
-            <div className="split-media contain"><Image src="/photos/ofsted.svg" alt="Ofsted registered" width={400} height={300} /></div>
+          <div style={{ maxWidth: 760 }}>
             <div>
               <h2>Safeguarding you can trust</h2>
               <p className="lead">Your child&apos;s wellbeing is our priority. We&apos;re an Ofsted-registered provider, all of our staff are experienced and DBS checked, and we maintain a safe, welcoming environment where every child feels they belong.</p>
               <ul>
-                <li>Ofsted registered childcare provider</li>
+                <li>Registered with Ofsted — URN 2854827</li>
                 <li>All staff DBS checked and safeguarding trained</li>
                 <li>Small ratios and close supervision</li>
                 <li>A calm, structured environment after the school day</li>

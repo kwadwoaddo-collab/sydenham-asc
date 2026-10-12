@@ -22,7 +22,7 @@ export default function HomePage() {
               <li><Icon name="shield" /> DBS-checked staff</li>
               <li><Icon name="clock" /> Open 7am–9pm</li>
               <li><Icon name="bus" /> School drop-offs &amp; pick-ups</li>
-              <li><Icon name="check" /> Ofsted registered</li>
+              <li><Icon name="check" /> Registered with Ofsted — URN 2854827</li>
             </ul>
           </div>
           <div className="home-hero-photo">
