@@ -377,7 +377,7 @@ label:has(> .visually-hidden:focus-visible) { outline: 3px solid var(--ink); out
 .form-card fieldset { min-width: 0; }
 
 /* Registration link: plain styled text link to the official Ofsted record (not a logo or badge) */
-.ofsted-link { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 8px 16px; background: var(--paper); border: 1.5px solid var(--line); border-radius: 999px; color: var(--ink); font-weight: 700; font-size: .98rem; text-decoration: none; }
+.ofsted-link { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 8px 16px; background: var(--paper); border: 1.5px solid #9A8460; border-radius: 999px; color: var(--ink); font-weight: 700; font-size: .98rem; text-decoration: none; } /* border #9A8460 = 3.3:1 on cream (WCAG 1.4.11) */
 .ofsted-link:hover { border-color: var(--ink); }
 .ofsted-link-arrow { color: var(--amber-deep); }
 .trust-list li.trust-wide { grid-column: 1 / -1; }
