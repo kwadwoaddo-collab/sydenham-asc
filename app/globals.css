@@ -228,7 +228,9 @@ p { text-wrap: pretty; }
 .run-leg.c1, .run-leg.c2 { transform-origin: 224px 233px; }
 .run-toggle { position: absolute; right: 10px; top: 10px; display: inline-flex; align-items: center; gap: 6px; min-height: 32px; padding: 4px 12px 4px 8px; border: 1px solid var(--line); border-radius: 999px; background: var(--paper); color: var(--green); font: inherit; font-size: 13px; font-weight: 600; cursor: pointer; }
 .run-toggle .icon { width: 16px; height: 16px; }
+.run-toggle::before { content: ""; position: absolute; left: -6px; right: -6px; top: -6px; bottom: -6px; min-width: 44px; min-height: 44px; }
 .run-toggle:hover { border-color: var(--green); }
+.run-toggle:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
 @media (prefers-reduced-motion: no-preference) {
   .run-art[data-run='play'] *, .run-art[data-run='paused'] * { animation-duration: 8.8s; animation-iteration-count: infinite; animation-fill-mode: both; }
   .run-art[data-run='paused'] * { animation-play-state: paused; }
