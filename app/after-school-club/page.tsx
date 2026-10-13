@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import Icon from '@/components/Icon';
+import SchoolRunIllustration from '@/components/SchoolRunIllustration';
 
 export const metadata: Metadata = {
   title: "After School Club in Sydenham | Childcare 3–9pm",
@@ -58,7 +59,7 @@ export default function Page() {
       <section className="section">
         <div className="container">
           <div className="split reverse">
-            <div className="split-media contain" style={{ aspectRatio: '4 / 3', color: 'var(--green)' }}><Icon name="bus" className="icon" /></div>
+            <div className="split-media contain run-panel"><SchoolRunIllustration /></div>
             <div>
               <h2>We&apos;ll take them and collect them</h2>
               <p className="lead">To support parents with work commitments, we offer a school-run service from 7am. We drop your child at school in the morning and collect them again in the afternoon — safely brought straight to the club, no juggling, no rush.</p>
