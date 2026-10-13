@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
+import OfstedRegistration from '@/components/OfstedRegistration';
 
 export const metadata: Metadata = {
   title: "About Us | Sydenham After School Club",
@@ -47,12 +48,12 @@ export default function Page() {
             <div>
               <h2>Safeguarding you can trust</h2>
               <p className="lead">Your child&apos;s wellbeing is our priority. We&apos;re an Ofsted-registered provider, all of our staff are experienced and DBS checked, and we maintain a safe, welcoming environment where every child feels they belong.</p>
-              <ul>
-                <li>Registered with Ofsted — URN 2854827</li>
+              <ul className="check-list">
                 <li>All staff DBS checked and safeguarding trained</li>
                 <li>Small ratios and close supervision</li>
                 <li>A calm, structured environment after the school day</li>
               </ul>
+              <p style={{ marginTop: 20 }}><OfstedRegistration /></p>
               <p style={{ marginTop: 20 }}><Link href="/leadership" className="text-link">Meet the leadership team →</Link></p>
             </div>
           </div>
