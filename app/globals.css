@@ -217,29 +217,33 @@ p { text-wrap: pretty; }
 .split-media { border-radius: var(--radius-lg); overflow: hidden; background: var(--cream-2); aspect-ratio: 4 / 3; }
 .split-media img { width: 100%; height: 100%; object-fit: cover; }
 .split-media.contain { display: grid; place-items: center; background: var(--paper); border: 1px solid var(--line); }
-.run-panel { color: var(--green); padding: clamp(16px, 4vw, 40px); }
+.run-panel { position: relative; color: var(--green); padding: clamp(16px, 4vw, 40px); }
 .run-art { width: 100%; height: auto; max-height: 100%; fill: none; stroke: currentColor; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
 .run-art .run-accent { stroke: var(--amber-deep); }
 .run-art .run-route { stroke: var(--amber-deep); stroke-dasharray: 2 10; }
-.run-walkers { transform: translateX(48px); }
-.run-art[data-run='ready'] .run-walkers { transform: translateX(0); }
-.run-art[data-run='ready'] .run-reveal { transform: scaleX(0); }
-.run-reveal { transform-box: fill-box; transform-origin: left center; }
-.run-leg { transform-origin: 0 0; }
+.run-art .run-eye { fill: currentColor; stroke: none; }
+.run-walkers { transform: translateX(-22px); }
+.run-turn { transform-origin: 198.5px 0; }
 .run-leg.a1, .run-leg.a2 { transform-origin: 178px 214px; }
 .run-leg.c1, .run-leg.c2 { transform-origin: 224px 233px; }
+.run-toggle { position: absolute; right: 10px; top: 10px; display: inline-flex; align-items: center; gap: 6px; min-height: 32px; padding: 4px 12px 4px 8px; border: 1px solid var(--line); border-radius: 999px; background: var(--paper); color: var(--green); font: inherit; font-size: 13px; font-weight: 600; cursor: pointer; }
+.run-toggle .icon { width: 16px; height: 16px; }
+.run-toggle:hover { border-color: var(--green); }
 @media (prefers-reduced-motion: no-preference) {
-  .run-art[data-run='play'] .run-walkers { animation: run-walk 3.2s cubic-bezier(.45, 0, .35, 1) both; }
-  .run-art[data-run='play'] .run-reveal { animation: run-reveal 3.2s cubic-bezier(.45, 0, .35, 1) both; }
-  .run-art[data-run='play'] .run-bob { animation: run-bob .533s ease-in-out 6; }
-  .run-art[data-run='play'] .run-leg.a1, .run-art[data-run='play'] .run-leg.c2 { animation: run-swing-a .533s ease-in-out 6; }
-  .run-art[data-run='play'] .run-leg.a2, .run-art[data-run='play'] .run-leg.c1 { animation: run-swing-b .533s ease-in-out 6; }
+  .run-art[data-run='play'] *, .run-art[data-run='paused'] * { animation-duration: 8.8s; animation-iteration-count: infinite; animation-fill-mode: both; }
+  .run-art[data-run='paused'] * { animation-play-state: paused; }
+  .run-art[data-run='play'] .run-walkers, .run-art[data-run='paused'] .run-walkers { animation-name: run-travel; animation-timing-function: cubic-bezier(.45, 0, .35, 1); }
+  .run-art[data-run='play'] .run-turn, .run-art[data-run='paused'] .run-turn { animation-name: run-turn; animation-timing-function: ease-in-out; }
+  .run-art[data-run='play'] .run-bob, .run-art[data-run='paused'] .run-bob { animation-name: run-bob; animation-timing-function: ease-in-out; }
+  .run-art[data-run='play'] .run-leg.a1, .run-art[data-run='paused'] .run-leg.a1, .run-art[data-run='play'] .run-leg.c2, .run-art[data-run='paused'] .run-leg.c2 { animation-name: run-swing-a; animation-timing-function: ease-in-out; }
+  .run-art[data-run='play'] .run-leg.a2, .run-art[data-run='paused'] .run-leg.a2, .run-art[data-run='play'] .run-leg.c1, .run-art[data-run='paused'] .run-leg.c1 { animation-name: run-swing-b; animation-timing-function: ease-in-out; }
 }
-@keyframes run-walk { from { transform: translateX(0); } to { transform: translateX(48px); } }
-@keyframes run-reveal { from { transform: scaleX(0); } to { transform: scaleX(1); } }
-@keyframes run-bob { 50% { transform: translateY(-1.5px); } }
-@keyframes run-swing-a { 0%, 100% { transform: rotate(0); } 50% { transform: rotate(7deg); } }
-@keyframes run-swing-b { 0%, 100% { transform: rotate(0); } 50% { transform: rotate(-7deg); } }
+@keyframes run-travel { 0% { transform: translateX(-22px); } 38.636% { transform: translateX(48px); } 50% { transform: translateX(48px); } 88.636% { transform: translateX(-22px); } 100% { transform: translateX(-22px); } }
+@keyframes run-turn { 0% { transform: scaleX(1); } 40.909% { transform: scaleX(1); } 46.591% { transform: scaleX(-1); } 90.909% { transform: scaleX(-1); } 96.591% { transform: scaleX(1); } 100% { transform: scaleX(1); } }
+@keyframes run-bob { 0% { transform: translateY(0px); } 3.22% { transform: translateY(-1.5px); } 6.439% { transform: translateY(0px); } 9.659% { transform: translateY(-1.5px); } 12.879% { transform: translateY(0px); } 16.098% { transform: translateY(-1.5px); } 19.318% { transform: translateY(0px); } 22.538% { transform: translateY(-1.5px); } 25.758% { transform: translateY(0px); } 28.977% { transform: translateY(-1.5px); } 32.197% { transform: translateY(0px); } 35.417% { transform: translateY(-1.5px); } 38.636% { transform: translateY(0px); } 50% { transform: translateY(0px); } 53.22% { transform: translateY(-1.5px); } 56.439% { transform: translateY(0px); } 59.659% { transform: translateY(-1.5px); } 62.879% { transform: translateY(0px); } 66.098% { transform: translateY(-1.5px); } 69.318% { transform: translateY(0px); } 72.538% { transform: translateY(-1.5px); } 75.758% { transform: translateY(0px); } 78.977% { transform: translateY(-1.5px); } 82.197% { transform: translateY(0px); } 85.417% { transform: translateY(-1.5px); } 88.636% { transform: translateY(0px); } 100% { transform: translateY(0px); } }
+@keyframes run-swing-a { 0% { transform: rotate(0deg); } 3.22% { transform: rotate(7deg); } 6.439% { transform: rotate(0deg); } 9.659% { transform: rotate(7deg); } 12.879% { transform: rotate(0deg); } 16.098% { transform: rotate(7deg); } 19.318% { transform: rotate(0deg); } 22.538% { transform: rotate(7deg); } 25.758% { transform: rotate(0deg); } 28.977% { transform: rotate(7deg); } 32.197% { transform: rotate(0deg); } 35.417% { transform: rotate(7deg); } 38.636% { transform: rotate(0deg); } 50% { transform: rotate(0deg); } 53.22% { transform: rotate(7deg); } 56.439% { transform: rotate(0deg); } 59.659% { transform: rotate(7deg); } 62.879% { transform: rotate(0deg); } 66.098% { transform: rotate(7deg); } 69.318% { transform: rotate(0deg); } 72.538% { transform: rotate(7deg); } 75.758% { transform: rotate(0deg); } 78.977% { transform: rotate(7deg); } 82.197% { transform: rotate(0deg); } 85.417% { transform: rotate(7deg); } 88.636% { transform: rotate(0deg); } 100% { transform: rotate(0deg); } }
+@keyframes run-swing-b { 0% { transform: rotate(0deg); } 3.22% { transform: rotate(-7deg); } 6.439% { transform: rotate(0deg); } 9.659% { transform: rotate(-7deg); } 12.879% { transform: rotate(0deg); } 16.098% { transform: rotate(-7deg); } 19.318% { transform: rotate(0deg); } 22.538% { transform: rotate(-7deg); } 25.758% { transform: rotate(0deg); } 28.977% { transform: rotate(-7deg); } 32.197% { transform: rotate(0deg); } 35.417% { transform: rotate(-7deg); } 38.636% { transform: rotate(0deg); } 50% { transform: rotate(0deg); } 53.22% { transform: rotate(-7deg); } 56.439% { transform: rotate(0deg); } 59.659% { transform: rotate(-7deg); } 62.879% { transform: rotate(0deg); } 66.098% { transform: rotate(-7deg); } 69.318% { transform: rotate(0deg); } 72.538% { transform: rotate(-7deg); } 75.758% { transform: rotate(0deg); } 78.977% { transform: rotate(-7deg); } 82.197% { transform: rotate(0deg); } 85.417% { transform: rotate(-7deg); } 88.636% { transform: rotate(0deg); } 100% { transform: rotate(0deg); } }
+
 .run-art .run-ground { stroke: var(--line); }
 .split-media.contain img { width: 62%; height: auto; object-fit: contain; }
 .split h2 + .lead, .split h2 + p { margin-top: 14px; }
