@@ -93,7 +93,7 @@ export default function HomePage() {
       <section className="section" id="stem">
         <div className="container">
           <div className="split">
-            <div className="split-media"><Image src="/photos/stem-kits.jpg" alt="Robotics, coding and STEM kits used at Sydenham After School Club" width={1448} height={1086} sizes="(min-width: 860px) 540px, 100vw" /></div>
+            <div className="split-media"><Image src="/photos/stem-kits.jpg" alt="STEM and robotics kits displayed on a table" width={1448} height={1086} sizes="(min-width: 860px) 540px, 100vw" /></div>
             <div>
               <h2>Childcare that sparks a love of STEM</h2>
               <p className="lead">While your child is with us after school, they&apos;re not just waiting to be collected — they&apos;re building robots, coding, and playing hands-on with real STEM kits. It&apos;s a club activity, not a lesson, so it feels like play.</p>
