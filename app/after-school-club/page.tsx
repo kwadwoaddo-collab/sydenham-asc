@@ -37,7 +37,7 @@ export default function Page() {
                 <li>All staff experienced and DBS checked</li>
               </ul>
             </div>
-            <div className="split-media"><Image src="/photos/stem-collection.jpg" alt="Children playing with STEM and robotics kits at Sydenham After School Club" width={1500} height={1125} sizes="(min-width: 860px) 540px, 100vw" /></div>
+            <div className="split-media"><Image src="/photos/stem-kits.jpg" alt="Children playing with STEM and robotics kits at Sydenham After School Club" width={1448} height={1086} sizes="(min-width: 860px) 540px, 100vw" /></div>
           </div>
         </div>
       </section>
