@@ -41,7 +41,7 @@ export default function RootLayout({
                       A safe, friendly after school club and tuition centre in the heart of Sydenham — trusted by local families. Established in 2016.
                     </p>
                   </div>
-                  <nav aria-label="Footer">
+                  <nav aria-label="Explore">
                     <h4>Explore</h4>
                     <ul className="footer-links">
                       <li><Link href="/after-school-club">After School Club</Link></li>
@@ -51,6 +51,16 @@ export default function RootLayout({
                       <li><Link href="/about">About Us</Link></li>
                       <li><Link href="/leadership">Leadership</Link></li>
                       <li><Link href="/join-us">Join the Team</Link></li>
+                    </ul>
+                  </nav>
+                  <nav aria-label="Private Exam Centre">
+                    <h4>Private Exam Centre</h4>
+                    <ul className="footer-links">
+                      <li><a href="https://exams.sydenhamasc.co.uk/">Private Candidate Exam Centre — Sydenham SE26</a></li>
+                      <li><a href="https://exams.sydenhamasc.co.uk/gcse-private-candidates">GCSE Private Candidates</a></li>
+                      <li><a href="https://exams.sydenhamasc.co.uk/functional-skills-exams">Functional Skills Maths &amp; English Exams</a></li>
+                      <li><a href="https://exams.sydenhamasc.co.uk/a-level-private-candidates">A-Level &amp; IGCSE Private Candidates</a></li>
+                      <li><a href="https://exams.sydenhamasc.co.uk/fees-and-deadlines">Exam Fees &amp; Entry Deadlines</a></li>
                     </ul>
                   </nav>
                   <div>

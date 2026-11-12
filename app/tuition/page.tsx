@@ -46,6 +46,7 @@ export default function Page() {
             <div className="feature"><span className="icon-chip green"><Icon name="check" /></span><div><h3>Exam prep</h3><p>11+, SATs, GCSE &amp; A-Level targeted prep.</p></div></div>
           </div>
           <p className="form-note" style={{ marginTop: 28 }}>We follow the Excel programme of study in Maths and English, developed by official GCSE and SATs examiners. Read our <a href="https://www.excelcentres.co.uk/gcses-guide/" target="_blank" rel="noopener noreferrer">GCSE Guide</a> and <a href="https://www.excelcentres.co.uk/sats-guide/" target="_blank" rel="noopener noreferrer">SATs Guide</a> to learn more.</p>
+          <p className="form-note" style={{ marginTop: 12 }}>Need an official centre solely to sit your exams as an external candidate? Visit our separate JCQ-approved examination centre (Centre 10780) at <a href="https://exams.sydenhamasc.co.uk/">Private Candidate Exam Centre — Sydenham SE26</a> for <a href="https://exams.sydenhamasc.co.uk/gcse-private-candidates">GCSE Private Candidates</a>, IGCSE, A-Level, and <a href="https://exams.sydenhamasc.co.uk/functional-skills-exams">Functional Skills Maths &amp; English Exams</a>.</p>
         </div>
       </section>
 

@@ -6,9 +6,10 @@ import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import Icon from '@/components/Icon';
 
-const nav = [
+const nav: Array<{ href: string; label: string; external?: boolean }> = [
   { href: '/after-school-club', label: 'After School Club' },
   { href: '/tuition', label: 'Tuition' },
+  { href: 'https://exams.sydenhamasc.co.uk/', label: 'Private Exam Centre', external: true },
   { href: '/fees', label: 'Fees' },
   { href: '/about', label: 'About' },
   { href: '/join-us', label: 'Join the Team' },
@@ -33,16 +34,22 @@ export default function SiteHeader() {
         <Link className="brand" href="/" aria-label="Sydenham After School Club — home">
           <Image src="/photos/logo.png" alt="" width={97} height={52} className="brand-logo" priority />
         </Link>
-        <ul className={`nav-links${open ? ' open' : ''}`} id="navLinks" onClick={(e) => { if ((e.target as HTMLElement).closest("a")) setOpen(false); }}>
-          {nav.map((item) => (
-            <li key={item.href}>
-              <Link href={item.href} aria-current={pathname === item.href ? 'page' : undefined}>{item.label}</Link>
+        <nav className="primary-nav" aria-label="Primary">
+          <ul className={`nav-links${open ? ' open' : ''}`} id="navLinks" onClick={(e) => { if ((e.target as HTMLElement).closest("a")) setOpen(false); }}>
+            {nav.map((item) => (
+              <li key={item.href}>
+                {item.external ? (
+                  <a href={item.href}>{item.label}</a>
+                ) : (
+                  <Link href={item.href} aria-current={pathname === item.href ? 'page' : undefined}>{item.label}</Link>
+                )}
+              </li>
+            ))}
+            <li className="nav-mobile-only" hidden={!open}>
+              <Link href="/free-assessment" aria-current={pathname === '/free-assessment' ? 'page' : undefined}>Free Assessment</Link>
             </li>
-          ))}
-          <li className="nav-mobile-only" hidden={!open}>
-            <Link href="/free-assessment" aria-current={pathname === '/free-assessment' ? 'page' : undefined}>Free Assessment</Link>
-          </li>
-        </ul>
+          </ul>
+        </nav>
         <div className="nav-cta">
           <Link href="/free-assessment" className="btn btn-outline btn-sm">Free Assessment</Link>
           <Link href="/contact" className="btn btn-primary btn-sm">Book a Place</Link>
