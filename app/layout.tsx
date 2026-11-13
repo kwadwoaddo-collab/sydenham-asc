@@ -14,6 +14,9 @@ const display = Young_Serif({ subsets: ['latin'], weight: '400', variable: '--fo
 export const metadata: Metadata = {
   title: 'Sydenham After School Club',
   description: "Caring after school club and expert tuition in Sydenham SE26. Wraparound childcare 7am–9pm, school drop-offs and pick-ups, and GCSE & SATs tuition.",
+  verification: {
+    google: 'gekMKSN4F5MAVEcRL3Gpx9affKsi9iNhOFioEhrjVc4',
+  },
 };
 
 export default function RootLayout({
